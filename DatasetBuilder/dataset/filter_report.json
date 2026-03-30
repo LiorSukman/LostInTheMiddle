@@ -1,0 +1,205 @@
+{
+  "total_extracted": 237,
+  "rejected_quality_4c": 6,
+  "rejected_closedbook_4a": 13,
+  "rejected_oracle_4b": 16,
+  "total_rejected": 35,
+  "verified_count": 202,
+  "rejection_details_4c": [
+    {
+      "id": "qa_0031",
+      "reason": "too_many_words",
+      "question": "Which two new categories debuted at the 81st Golden Globe Awards?"
+    },
+    {
+      "id": "qa_0038",
+      "reason": "too_many_words",
+      "question": "Which two companies acquired the Golden Globes' rights and properties from the HFPA?"
+    },
+    {
+      "id": "qa_0039",
+      "reason": "too_many_words",
+      "question": "Who co-hosted the announcement of the 81st Golden Globes nominations?"
+    },
+    {
+      "id": "qa_0197",
+      "reason": "full_sentence",
+      "question": "What was notable about the 2024 Booker Prize shortlist in terms of gender representation?"
+    },
+    {
+      "id": "qa_0218",
+      "reason": "too_many_words",
+      "question": "What Latin inscription appears on the Nobel Prize in Physics medal?"
+    },
+    {
+      "id": "qa_0234",
+      "reason": "purely_numeric_year",
+      "question": "In what year was the provision added that no more than three persons may share a Nobel Prize in Physiology or Medicine?"
+    }
+  ],
+  "rejection_details_4a": [
+    {
+      "id": "qa_0024",
+      "reason": "well_known_answer_no_year",
+      "question": "Which distributor received the most total nominations between film and television at the 82nd Golden Globes?"
+    },
+    {
+      "id": "qa_0029",
+      "reason": "well_known_answer_no_year",
+      "question": "Which television series led the TV nominations at the 82nd Golden Globe Awards with 5 nominations?"
+    },
+    {
+      "id": "qa_0219",
+      "reason": "general_article_no_year_ref",
+      "question": "Who designed the medal for the Nobel Prize in Physics?"
+    },
+    {
+      "id": "qa_0220",
+      "reason": "general_article_no_year_ref",
+      "question": "Which company currently manufactures the Nobel Prize in Physics medal?"
+    },
+    {
+      "id": "qa_0221",
+      "reason": "general_article_no_year_ref",
+      "question": "What goddess is depicted on the reverse of the Nobel Prize in Physics medal?"
+    },
+    {
+      "id": "qa_0222",
+      "reason": "general_article_no_year_ref",
+      "question": "How many people are sent confidential nomination forms for the Nobel Prize in Physics each year?"
+    },
+    {
+      "id": "qa_0223",
+      "reason": "general_article_no_year_ref",
+      "question": "By what date must completed Nobel Prize in Physics nomination forms arrive at the Nobel Committee?"
+    },
+    {
+      "id": "qa_0224",
+      "reason": "general_article_no_year_ref",
+      "question": "How many members make up the Nobel Committee for Physics?"
+    },
+    {
+      "id": "qa_0225",
+      "reason": "general_article_no_year_ref",
+      "question": "How many years are Nobel Prize nomination records sealed for?"
+    },
+    {
+      "id": "qa_0226",
+      "reason": "general_article_no_year_ref",
+      "question": "What was the total cash award for the Nobel Prize in 2009?"
+    },
+    {
+      "id": "qa_0232",
+      "reason": "general_article_no_year_ref",
+      "question": "Which woman was the only one to receive an unshared Nobel Prize in Physiology or Medicine?"
+    },
+    {
+      "id": "qa_0233",
+      "reason": "general_article_no_year_ref",
+      "question": "Who was the first Nobel laureate in Physiology or Medicine to reach the 100th birthday?"
+    },
+    {
+      "id": "qa_0235",
+      "reason": "general_article_no_year_ref",
+      "question": "How many times has the Nobel Prize in Physiology or Medicine not been awarded?"
+    }
+  ],
+  "rejection_details_4b": [
+    {
+      "id": "qa_0013",
+      "reason": "answer_not_in_source",
+      "question": "Who announced the nominees for the 98th Academy Awards?",
+      "answer": "Danielle Brooks and Lewis Pullman"
+    },
+    {
+      "id": "qa_0096",
+      "reason": "answer_not_in_source",
+      "question": "Which film surpassed Mamma Mia! as the highest-grossing Broadway musical film adaptation of all time?",
+      "answer": "Wicked"
+    },
+    {
+      "id": "qa_0100",
+      "reason": "answer_not_in_source",
+      "question": "Which animated film surpassed Inside Out 2 to become the highest-grossing animated film of all time in 2025?",
+      "answer": "Ne Zha 2"
+    },
+    {
+      "id": "qa_0108",
+      "reason": "answer_not_in_source",
+      "question": "Which Japanese anime film became the highest-grossing Japanese film of all time in 2025?",
+      "answer": "Demon Slayer: Infinity Castle"
+    },
+    {
+      "id": "qa_0109",
+      "reason": "answer_not_in_source",
+      "question": "Which live-action animated film became the first to globally gross at least $1 billion?",
+      "answer": "Lilo & Stitch"
+    },
+    {
+      "id": "qa_0115",
+      "reason": "answer_not_in_source",
+      "question": "Which two athletes lit the Olympics and Paralympics cauldron at the 2024 Paris opening ceremony?",
+      "answer": "Teddy Riner and Marie-José Pérec"
+    },
+    {
+      "id": "qa_0138",
+      "reason": "answer_not_in_source",
+      "question": "What was the first-round match at the 2024 FIFA Intercontinental Cup called?",
+      "answer": "FIFA African-Asian-Pacific Cup play-off"
+    },
+    {
+      "id": "qa_0145",
+      "reason": "answer_not_in_source",
+      "question": "What Grand Slam first did the 2025 Australian Open introduce with courtside coaching pods?",
+      "answer": "court-side coaching pods"
+    },
+    {
+      "id": "qa_0147",
+      "reason": "answer_not_in_source",
+      "question": "Who won the mixed doubles title at the 2025 Australian Open?",
+      "answer": "Olivia Gadecki and John Peers"
+    },
+    {
+      "id": "qa_0152",
+      "reason": "answer_not_in_source",
+      "question": "Who became the first Finnish man to win the doubles trophy at the All England Club at Wimbledon 2024?",
+      "answer": "Harri Heliövaara"
+    },
+    {
+      "id": "qa_0155",
+      "reason": "answer_not_in_source",
+      "question": "Which qualifier became the first woman representing New Zealand to reach the Wimbledon quarterfinals in the Open Era?",
+      "answer": "Lulu Sun"
+    },
+    {
+      "id": "qa_0158",
+      "reason": "answer_not_in_source",
+      "question": "Who won the mixed invitation doubles at the 2024 Wimbledon Championships?",
+      "answer": "Mark Woodforde and Dominika Cibulková"
+    },
+    {
+      "id": "qa_0170",
+      "reason": "answer_not_in_source",
+      "question": "Who was the first candidate to win a contested Democratic primary against an incumbent president since Ted Kennedy in 1980?",
+      "answer": "Jason Palmer"
+    },
+    {
+      "id": "qa_0193",
+      "reason": "answer_not_in_source",
+      "question": "Which was the first Dutch author ever to be longlisted for the Booker Prize in 2024?",
+      "answer": "Yael van der Wouden"
+    },
+    {
+      "id": "qa_0227",
+      "reason": "answer_not_in_source",
+      "question": "Who are the three laureates of the most recent Nobel Prize in Physiology or Medicine announced in October 2025?",
+      "answer": "Brunkow, Ramsdell, and Sakaguchi"
+    },
+    {
+      "id": "qa_0231",
+      "reason": "answer_not_in_source",
+      "question": "How many women have received the Nobel Prize in Physiology or Medicine through 2025?",
+      "answer": "fourteen"
+    }
+  ]
+}

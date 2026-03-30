@@ -1,0 +1,169 @@
+{
+  "total_items": 196,
+  "passed_all_checks": 196,
+  "answer_presence_failures": 0,
+  "distractor_contamination": 0,
+  "distractor_count_errors": 0,
+  "passage_length_warnings": 36,
+  "duplicate_questions": 0,
+  "domain_distribution": {
+    "Film/Awards": 66,
+    "Music": 28,
+    "Sports": 53,
+    "Politics": 19,
+    "Literature": 15,
+    "Science": 15
+  },
+  "details": {
+    "answer_presence_failures": [],
+    "distractor_contamination": [],
+    "distractor_count_errors": [],
+    "passage_length_warnings": [
+      {
+        "item_id": "item_0007",
+        "word_count": 34
+      },
+      {
+        "item_id": "item_0011",
+        "word_count": 189
+      },
+      {
+        "item_id": "item_0018",
+        "word_count": 167
+      },
+      {
+        "item_id": "item_0019",
+        "word_count": 186
+      },
+      {
+        "item_id": "item_0020",
+        "word_count": 186
+      },
+      {
+        "item_id": "item_0024",
+        "word_count": 167
+      },
+      {
+        "item_id": "item_0026",
+        "word_count": 178
+      },
+      {
+        "item_id": "item_0029",
+        "word_count": 178
+      },
+      {
+        "item_id": "item_0046",
+        "word_count": 188
+      },
+      {
+        "item_id": "item_0047",
+        "word_count": 188
+      },
+      {
+        "item_id": "item_0048",
+        "word_count": 176
+      },
+      {
+        "item_id": "item_0053",
+        "word_count": 198
+      },
+      {
+        "item_id": "item_0057",
+        "word_count": 158
+      },
+      {
+        "item_id": "item_0069",
+        "word_count": 242
+      },
+      {
+        "item_id": "item_0070",
+        "word_count": 338
+      },
+      {
+        "item_id": "item_0071",
+        "word_count": 338
+      },
+      {
+        "item_id": "item_0075",
+        "word_count": 178
+      },
+      {
+        "item_id": "item_0076",
+        "word_count": 417
+      },
+      {
+        "item_id": "item_0080",
+        "word_count": 386
+      },
+      {
+        "item_id": "item_0081",
+        "word_count": 386
+      },
+      {
+        "item_id": "item_0082",
+        "word_count": 386
+      },
+      {
+        "item_id": "item_0086",
+        "word_count": 386
+      },
+      {
+        "item_id": "item_0088",
+        "word_count": 292
+      },
+      {
+        "item_id": "item_0089",
+        "word_count": 292
+      },
+      {
+        "item_id": "item_0093",
+        "word_count": 292
+      },
+      {
+        "item_id": "item_0096",
+        "word_count": 171
+      },
+      {
+        "item_id": "item_0101",
+        "word_count": 37
+      },
+      {
+        "item_id": "item_0103",
+        "word_count": 36
+      },
+      {
+        "item_id": "item_0122",
+        "word_count": 164
+      },
+      {
+        "item_id": "item_0127",
+        "word_count": 165
+      },
+      {
+        "item_id": "item_0128",
+        "word_count": 164
+      },
+      {
+        "item_id": "item_0129",
+        "word_count": 165
+      },
+      {
+        "item_id": "item_0147",
+        "word_count": 35
+      },
+      {
+        "item_id": "item_0159",
+        "word_count": 181
+      },
+      {
+        "item_id": "item_0163",
+        "word_count": 181
+      },
+      {
+        "item_id": "item_0191",
+        "word_count": 197
+      }
+    ],
+    "duplicate_questions": []
+  }
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Which country tied with the United States on gold medals at the 2024 Summer Olympics?",
+    "answer": "China",
+    "source_sentence": "China tied with the United States on gold (40), but finished second due to having fewer silvers; the nation won 91 medals overall."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who was the first torchbearer of the 2024 Olympic torch relay?",
+    "answer": "Stefanos Douskos",
+    "source_sentence": "Greek rower Stefanos Douskos was the first torchbearer and swimmer Laure Manaudou served as the first French torchbearer."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Which luxury jewellery firm designed the 2024 Paris Olympic medals?",
+    "answer": "Chaumet",
+    "source_sentence": "Approximately 5,084 medals would be produced by the French mint Monnaie de Paris, and were designed by Chaumet, a luxury jewellery firm based in Paris."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who was the refugee athlete that won the first-ever medal for the Refugee Olympic Team at the 2024 Olympics?",
+    "answer": "Cindy Ngamba",
+    "source_sentence": "The Refugee Olympic Team also won their first-ever medal: Cindy Ngamba, a refugee from Cameroon, won a bronze in boxing."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who directed the opening ceremony of the 2024 Paris Olympics?",
+    "answer": "Thomas Jolly",
+    "source_sentence": "Directed by Thomas Jolly, it was the first Summer Olympics opening ceremony to be held outside the traditional stadium setting; the parade of athletes was conducted as a boat parade along the Seine from Pont d'Austerlitz to Pont d'Iéna, and cultural segments took place at various landmarks along the route."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Which two athletes lit the Olympics and Paralympics cauldron at the 2024 Paris opening ceremony?",
+    "answer": "Teddy Riner and Marie-José Pérec",
+    "source_sentence": "The Olympics and Paralympics cauldron was lit by Guadeloupean judoka Teddy Riner and sprinter Marie-José Pérec; it had a hot air balloon-inspired design topped by a 30-metre-tall (98 ft) helium sphere, and was allowed to float into the air above the Tuileries Garden at night."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Which venue at the 2024 Paris Olympics served only plant-based food?",
+    "answer": "Place de la Concorde",
+    "source_sentence": "The Place de la Concorde, the venue that hosted the skateboarding, breakdancing and BMX events, only served plant-based food."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who produced the LA28 Handover Celebration portion of the 2024 Paris Olympics closing ceremony?",
+    "answer": "Ben Winston",
+    "source_sentence": "The Antwerp Ceremony, in which the Olympic flag was handed to Los Angeles, the host city of the 2028 Summer Olympics, was produced by Ben Winston and his studio Fulwell 73."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "How many terror plots targeting the 2024 Olympic and Paralympic Games did French authorities foil?",
+    "answer": "three",
+    "source_sentence": "Following the end of the Games, the national counterterrorism prosecutor, Olivier Christen, revealed that French authorities foiled three terror plots meant to attack the Olympic and Paralympic Games, resulting in the arrest of five suspects."
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who designed the official Olympic poster for the 2024 Paris Games?",
+    "answer": "Ugo Gattoni",
+    "source_sentence": "Designed by Ugo Gattoni, the poster uses a diptych design, with one half representing the Olympics and the other half representing the Paralympics."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Who won the Player of the Tournament award at UEFA Euro 2024?",
+    "answer": "Rodri",
+    "source_sentence": "The Player of the Tournament award was given to Rodri, who was chosen by UEFA's technical observers."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Which team was the only debutant at UEFA Euro 2024?",
+    "answer": "Georgia",
+    "source_sentence": "Georgia beat Greece on penalties in the play-offs to qualify for their first-ever tournament since gaining independence from the Soviet Union in 1991, also becoming the only debutants for this edition and ensuring every final tournament since the inaugural Euro 1960 saw at least one new team make their debut."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Who set the record for the fastest goal in European Championship history at Euro 2024?",
+    "answer": "Nedim Bajrami",
+    "source_sentence": "Nedim Bajrami set the record for fastest goal scored in European Championship history, scoring in Albania's opener against Italy after just 23 seconds."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "What was the name of the official match ball of UEFA Euro 2024?",
+    "answer": "Fussballliebe",
+    "source_sentence": "The official match ball of the tournament, \"Fussballliebe\", was unveiled by UEFA and Adidas on 15 November 2023."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "What was chosen as the Goal of the Tournament at Euro 2024?",
+    "answer": "Lamine Yamal's semi-final goal",
+    "source_sentence": "On 16 July 2024, UEFA announced that Spanish winger Lamine Yamal's semi-final goal against France had been chosen as the best goal of the tournament."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Who became the oldest player to make an appearance at the European Championship during Euro 2024?",
+    "answer": "Pepe",
+    "source_sentence": "Portugal's Pepe became the oldest player to make an appearance at the European Championship, aged 41 years and 130 days in his side's quarter-final match against France."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "What was the name of the official Euro 2024 mascot?",
+    "answer": "Albärt",
+    "source_sentence": "Results were made public on 5 July, with the mascot's name announced to be \"Albärt\", getting 32% of the votes."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Whose group stage goal against Georgia was voted the Fans' Goal of the Tournament at Euro 2024?",
+    "answer": "Mert Müldür",
+    "source_sentence": "On 20 July 2024, after an open vote on the official Euro 2024 website, UEFA announced that Turkish defender Mert Müldür's group stage goal against Georgia had been chosen as the fans' goal of the tournament."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Where was the final tournament draw for Euro 2024 held?",
+    "answer": "Elbphilharmonie in Hamburg",
+    "source_sentence": "The final tournament draw took place on 2 December 2023, 18:00 CET, at the Elbphilharmonie in Hamburg."
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Who replaced Kim Petras as a performer of the Euro 2024 official song?",
+    "answer": "Leony",
+    "source_sentence": "However, in March 2024, it was announced that Petras had withdrawn from production due to scheduling issues, and was replaced by German singer Leony."
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "Who won the Golden Ball award at the 2024 FIFA Intercontinental Cup?",
+    "answer": "Vinícius Júnior",
+    "source_sentence": "Vinícius Júnior of Real Madrid won the Golden Ball award, sponsored by Adidas, which was jointly awarded with the Aramco Player of the Tournament to recognise the best player of the Intercontinental Cup."
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "Which club won the Intercontinental Cup final in the inaugural 2024 edition?",
+    "answer": "Real Madrid",
+    "source_sentence": "Intercontinental Cup:  Real Madrid"
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "Which club won the Derby of the Americas at the 2024 FIFA Intercontinental Cup?",
+    "answer": "Pachuca",
+    "source_sentence": "Derby of the Americas:  Pachuca"
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "Which club won the African-Asian-Pacific Cup at the 2024 FIFA Intercontinental Cup?",
+    "answer": "Al Ahly",
+    "source_sentence": "African–Asian–Pacific Cup:  Al Ahly"
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "In which city was the final of the 2024 FIFA Intercontinental Cup played?",
+    "answer": "Lusail, Qatar",
+    "source_sentence": "Final: The winners of the play-off (FIFA Challenger Cup) played the winners of the 2023–24 UEFA Champions League in Lusail, Qatar."
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "On what date did the FIFA Council approve the details of the Intercontinental Cup format?",
+    "answer": "17 December 2023",
+    "source_sentence": "The details were approved by the FIFA Council on 17 December 2023, with the format formally confirmed on 20 September 2024."
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "What was the second-round match between the CONCACAF and CONMEBOL representatives called?",
+    "answer": "FIFA Derby of the Americas",
+    "source_sentence": "In parallel, the winners of the 2024 Copa Libertadores and the winners of the 2024 CONCACAF Champions Cup played each other in Doha, Qatar, in a match that will be denominated the \"FIFA Derby of the Americas\"."
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "What was the name of the play-off match at the 2024 FIFA Intercontinental Cup?",
+    "answer": "FIFA Challenger Cup",
+    "source_sentence": "Play-off: The winners of the second round matches played each other in Doha, Qatar in the \"FIFA Challenger Cup\"."
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "What was the first-round match at the 2024 FIFA Intercontinental Cup called?",
+    "answer": "FIFA African-Asian-Pacific Cup play-off",
+    "source_sentence": "First round: The winners of the 2023–24 AFC Champions League hosted the winners of the 2024 OFC Champions League in the \"FIFA African–Asian–Pacific Cup play-off\"."
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "How many teams comprised the 2024 FIFA Intercontinental Cup tournament?",
+    "answer": "six",
+    "source_sentence": "The tournament comprised the six teams that won the previous edition of the continental championships in each FIFA confederation, playing each other in a single-elimination bracket."
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the 2025 Australian Open women's singles title?",
+    "answer": "Madison Keys",
+    "source_sentence": "Madison Keys won the women's singles champion, after defeating two-time defending champion Aryna Sabalenka in the final."
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the boys' singles title at the 2025 Australian Open?",
+    "answer": "Henry Bernet",
+    "source_sentence": "Henry Bernet def.  Benjamin Willwerth, 6–3, 6–4"
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "What was the total prize money for the 2025 Australian Open?",
+    "answer": "A$96,500,000",
+    "source_sentence": "The Australian Open total prize money for 2025 increased by 11.6% year on year to a tournament record A$96,500,000."
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the girls' singles title at the 2025 Australian Open?",
+    "answer": "Wakana Sonobe",
+    "source_sentence": "Wakana Sonobe def.  Kristina Penickova, 6–0, 6–1"
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the wheelchair men's singles title at the 2025 Australian Open?",
+    "answer": "Alfie Hewett",
+    "source_sentence": "Alfie Hewett def.  Tokito Oda, 6–4, 6–4"
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "What Grand Slam first did the 2025 Australian Open introduce with courtside coaching pods?",
+    "answer": "court-side coaching pods",
+    "source_sentence": "The Australian Open has introduced court-side \"coaching pods\" at this year's tournament (2025) in a Grand Slam first."
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Which Channel 9 presenter called Djokovic 'overrated' during the 2025 Australian Open?",
+    "answer": "Tony Jones",
+    "source_sentence": "During a Nine News Melbourne broadcast on 17 January, Channel 9 presenter Tony Jones was standing in front of a crowd of Serbian fans when he said Djokovic was \"overrated\" and a \"has-been\", followed by \"kick him out\"."
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the mixed doubles title at the 2025 Australian Open?",
+    "answer": "Olivia Gadecki and John Peers",
+    "source_sentence": "Olivia Gadecki /  John Peers def.  Kimberly Birrell /  John-Patrick Smith, 3–6, 6–4, [10–6]"
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Which sport was presented for the first time at the Australian Open in 2025?",
+    "answer": "pickleball",
+    "source_sentence": "The 2025 Australian Open became the first Australian Open to present pickleball."
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who defeated Learner Tien's conqueror Daniil Medvedev and then criticised on-court interview negativity at the 2025 Australian Open?",
+    "answer": "Ben Shelton",
+    "source_sentence": "On 22 January, during a press conference after winning his quarterfinal match, Ben Shelton criticised the \"negativity\" and style of questions being asked by interviewers after matches in the on-court interviews."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Who won the ladies' singles title at the 2024 Wimbledon Championships?",
+    "answer": "Barbora Krejčíková",
+    "source_sentence": "Barbora Krejčíková defeated Jasmine Paolini in the final to win the ladies' singles title."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Which lucky loser became the first to reach the fourth round at Wimbledon since Dick Norman in 1995?",
+    "answer": "Giovanni Mpetshi Perricard",
+    "source_sentence": "Giovanni Mpetshi Perricard became the first lucky loser to reach the fourth round at Wimbledon since Dick Norman in 1995."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Who became the first Finnish man to win the doubles trophy at the All England Club at Wimbledon 2024?",
+    "answer": "Harri Heliövaara",
+    "source_sentence": "Heliövaara became the first Finnish man to lift the doubles trophy at the All England Club."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Which defending Wimbledon women's singles champion lost in the first round in 2024?",
+    "answer": "Markéta Vondroušová",
+    "source_sentence": "Four seeded players lost in the first round, most notably the No. 6 seed and defending champion Markéta Vondroušová."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Who became the first Italian woman to reach the Wimbledon singles semifinals in the Open Era at the 2024 Championships?",
+    "answer": "Jasmine Paolini",
+    "source_sentence": "Seventh seed Jasmine Paolini defeated 17th seed Emma Navarro in straight sets to become the first Italian woman to reach the semifinals in the Open Era."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Which qualifier became the first woman representing New Zealand to reach the Wimbledon quarterfinals in the Open Era?",
+    "answer": "Lulu Sun",
+    "source_sentence": "Sun became the first woman representing New Zealand to reach the fourth round of a major since Belinda Cordwell at the 1989 Australian Open, and the first to reach the quarterfinals of Wimbledon in the Open Era."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Who won the boys' singles title at the 2024 Wimbledon Championships, becoming the first Norwegian to win a junior major singles title?",
+    "answer": "Nicolai Budkov Kjær",
+    "source_sentence": "Nicolai Budkov Kjær won the championship by emerging victorious against his Dutch opponent in straight sets, becoming the first Norwegian to win a junior major singles title."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Which Mexican pair became the first Mexican duo to reach the mixed doubles final at Wimbledon in 2024?",
+    "answer": "Santiago González and Giuliana Olmos",
+    "source_sentence": "In the semifinals, Santiago González and Giuliana Olmos defeated the pair of Ulrikke Eikeri and Máximo González in straight sets. By doing so, they became the first Mexican duo to reach the mixed doubles final at Wimbledon."
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Who won the mixed invitation doubles at the 2024 Wimbledon Championships?",
+    "answer": "Mark Woodforde and Dominika Cibulková",
+    "source_sentence": "Mark Woodforde /  Dominika Cibulková defeated  Nenad Zimonjić /  Barbara Schett 6–3, 6–2"
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "What was the total prize money for the 2024 Wimbledon Championships?",
+    "answer": "£50,000,000",
+    "source_sentence": "The Wimbledon Championships total prize money for 2024 is £50,000,000, an increase of 11.86% from the 2023 edition."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who won the first stage of the 2024 Tour de France and earned the first yellow jersey?",
+    "answer": "Romain Bardet",
+    "source_sentence": "Romain Bardet narrowly won the opening stage from a breakaway with teammate Frank van den Broek, five seconds ahead of the peloton, to earn the first yellow jersey."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who became the first Black African to win a stage on the Tour de France in 2024?",
+    "answer": "Biniam Girmay",
+    "source_sentence": "The Eritrean rider Biniam Girmay crossed the finish line first, becoming the first Black African to win a stage on the Tour."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who became the first Ecuadorian to wear the Tour de France's yellow jersey in 2024?",
+    "answer": "Richard Carapaz",
+    "source_sentence": "The reigning Olympic road race champion Richard Carapaz finished the day atop the overall standings, becoming the first Ecuadorian to wear the Tour's yellow jersey."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "In which city did the 2024 Tour de France finish instead of Paris?",
+    "answer": "Nice",
+    "source_sentence": "It started in Florence, Italy, on 29 June, and finished in Nice, France, on 21 July."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "How many stages did Tadej Pogačar win at the 2024 Tour de France?",
+    "answer": "six",
+    "source_sentence": "Pogačar won six stages, including the last three."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who won the mountains classification at the 2024 Tour de France?",
+    "answer": "Carapaz",
+    "source_sentence": "Carapaz won the mountains classification and the overall combativity award; and Evenepoel won the young rider classification."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Which rider won stage 5 to break Eddy Merckx's all-time record for Tour de France stage wins?",
+    "answer": "Mark Cavendish",
+    "source_sentence": "Mark Cavendish won the 5th stage, his 35th stage victory at the Tour de France, breaking the record of 34 stage wins held by Eddy Merckx since 1975."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who won the points classification (green jersey) at the 2024 Tour de France?",
+    "answer": "Girmay",
+    "source_sentence": "Girmay won the points classification; Carapaz won the mountains classification and the overall combativity award; and Evenepoel won the young rider classification."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Which country hosted the Grand Départ of the Tour de France for the first time in 2024?",
+    "answer": "Italy",
+    "source_sentence": "Italy hosted the Grand Départ for the first time."
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who won the chaotic stage 9 of the 2024 Tour de France with its gravel road sections?",
+    "answer": "Anthony Turgis",
+    "source_sentence": "A breakaway group was successful, with Frenchman Anthony Turgis winning the stage, Tom Pidcock coming second and Derek Gee third."
+  }
+]

@@ -1,0 +1,2022 @@
+[
+  {
+    "article": "97th Academy Awards",
+    "question": "Who hosted the 97th Academy Awards ceremony?",
+    "answer": "Conan O'Brien",
+    "source_sentence": "Comedian Conan O'Brien hosted the show for the first time.",
+    "id": "qa_0000",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "How many awards did Anora win at the 97th Academy Awards?",
+    "answer": "five",
+    "source_sentence": "Anora won a leading five awards, including Best Picture.",
+    "id": "qa_0001",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "How many viewers in the United States watched the 97th Academy Awards telecast?",
+    "answer": "19.69 million",
+    "source_sentence": "The telecast drew 19.69 million viewers in the United States.",
+    "id": "qa_0002",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "Who became the first member of Generation Z to win an acting Oscar at the 97th Academy Awards?",
+    "answer": "Mikey Madison",
+    "source_sentence": "At the age of 25, Best Actress winner Mikey Madison became the first member of Generation Z to win an acting Oscar.",
+    "id": "qa_0003",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "How long was Adrien Brody's acceptance speech at the 97th Oscars, setting the record for longest in Oscar history?",
+    "answer": "5 minutes and 37 seconds",
+    "source_sentence": "Best Actor winner Adrien Brody gave the longest acceptance speech in Oscar history at 5 minutes and 37 seconds.",
+    "id": "qa_0004",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "Who became the first Dominican American to win an Oscar at the 97th Academy Awards?",
+    "answer": "Zoe Saldaña",
+    "source_sentence": "Best Supporting Actress winner Zoe Saldaña was the first Dominican American to win an Oscar.",
+    "id": "qa_0005",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "Who became the first Black man to win the Oscar for Best Costume Design?",
+    "answer": "Paul Tazewell",
+    "source_sentence": "Best Costume Design winner Paul Tazewell became the first Black man to win that category.",
+    "id": "qa_0006",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "Who presented the 'In Memoriam' segment at the 97th Academy Awards?",
+    "answer": "Morgan Freeman",
+    "source_sentence": "The annual \"In Memoriam\" segment, presented by Morgan Freeman, featured the Los Angeles Master Chorale performing \"Lacrimosa\" from Requiem by Wolfgang Amadeus Mozart.",
+    "id": "qa_0007",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "Who received the Jean Hersholt Humanitarian Award at the 97th Academy Awards' Governors Awards?",
+    "answer": "Richard Curtis",
+    "source_sentence": "Richard Curtis – \"A brilliant comedic storyteller [with] tremendous charitable efforts\".",
+    "id": "qa_0008",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "97th Academy Awards",
+    "question": "How many nominations did Emilia Pérez receive at the 97th Oscars, the most for a non-English-language film?",
+    "answer": "thirteen",
+    "source_sentence": "Emilia Pérez led all nominees with thirteen nominations, the most for a non-English-language film in Oscars history.",
+    "id": "qa_0009",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "How many nominations did the film Sinners receive at the 98th Academy Awards, setting a new Oscar record?",
+    "answer": "sixteen",
+    "source_sentence": "The sixteen nominations received by Sinners are the most in Oscar history, surpassing the previous record of fourteen shared by All About Eve (1950), Titanic (1997), and La La Land (2016).",
+    "id": "qa_0010",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "What new category was introduced at the 98th Academy Awards?",
+    "answer": "Best Casting",
+    "source_sentence": "This year, Best Casting will be presented as a new category, bringing the total number of competitive Oscar categories to 24.",
+    "id": "qa_0011",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "Who received the Jean Hersholt Humanitarian Award at the 98th Academy Awards' Governors Awards?",
+    "answer": "Dolly Parton",
+    "source_sentence": "Dolly Parton – A \"beloved performer [who] exemplifies the spirit of the Jean Hersholt Humanitarian Award through her unwavering dedication to charitable efforts\".",
+    "id": "qa_0012",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "Who became the most-nominated Black woman across any Oscar category at the 98th ceremony?",
+    "answer": "Ruth E. Carter",
+    "source_sentence": "Ruth E. Carter became the most-nominated Black woman, across any category, with her fifth nomination for Best Costume Design.",
+    "id": "qa_0014",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "Who became the first woman of color nominated for Best Cinematography at the 98th Oscars?",
+    "answer": "Autumn Durald Arkapaw",
+    "source_sentence": "Autumn Durald Arkapaw became the fourth woman and the first woman of color nominated for Best Cinematography.",
+    "id": "qa_0015",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "Who became the most-nominated female producer at the 98th Academy Awards?",
+    "answer": "Dede Gardner",
+    "source_sentence": "With nine nominations for Best Picture, Dede Gardner became the most-nominated female producer, breaking her tie with Kathleen Kennedy.",
+    "id": "qa_0016",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "Who became the first Brazilian nominated for Best Actor in a Leading Role at the 98th Oscars?",
+    "answer": "Wagner Moura",
+    "source_sentence": "Wagner Moura became the first Brazilian nominated for Best Actor in a Leading Role.",
+    "id": "qa_0017",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "Which actress set the record for the longest gap between Oscar nominations at the 98th Academy Awards?",
+    "answer": "Amy Madigan",
+    "source_sentence": "The 40-year span between Amy Madigan's first nomination, for her supporting role in Twice in a Lifetime (1985), and her second, for Weapons, set the record for the longest gap between Oscar nominations for an actress.",
+    "id": "qa_0018",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "98th Academy Awards",
+    "question": "Which nominated casting director said 'people really don't understand what casting directors do' during a panel about the new Best Casting category?",
+    "answer": "Cassandra Kulukundis",
+    "source_sentence": "\"I think it's kind of sad that it took that long,\" said Cassandra Kulukundis, nominated for One Battle After Another, adding, \"I'm realizing on this journey that people really don't understand what [casting directors] do.\"",
+    "id": "qa_0019",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "82nd Golden Globe Awards",
+    "question": "Who hosted the 82nd Golden Globe Awards, becoming the first solo female host in Golden Globes history?",
+    "answer": "Nikki Glaser",
+    "source_sentence": "The event was hosted by comedian Nikki Glaser, making her the first solo female host in Golden Globes history.",
+    "id": "qa_0020",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "82nd Golden Globe Awards",
+    "question": "Who received the Cecil B. DeMille Award at the 82nd Golden Globes?",
+    "answer": "Viola Davis",
+    "source_sentence": "The recipient of the Cecil B. DeMille Award was Viola Davis, while the Carol Burnett Award was awarded to Ted Danson.",
+    "id": "qa_0021",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "82nd Golden Globe Awards",
+    "question": "Who received the Carol Burnett Award at the 82nd Golden Globe Awards?",
+    "answer": "Ted Danson",
+    "source_sentence": "The recipient of the Cecil B. DeMille Award was Viola Davis, while the Carol Burnett Award was awarded to Ted Danson.",
+    "id": "qa_0022",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "82nd Golden Globe Awards",
+    "question": "Which firm took over tabulating the nominations at the 82nd Golden Globes from Ernst & Young?",
+    "answer": "KPMG",
+    "source_sentence": "This year's nominations were tabulated by KPMG, the U.S. audit, tax, and advisory firm, taking over Ernst & Young after fifty plus years.",
+    "id": "qa_0023",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "82nd Golden Globe Awards",
+    "question": "How many total nominations did Netflix receive at the 82nd Golden Globe Awards?",
+    "answer": "36",
+    "source_sentence": "Netflix received a total of 36 nominations between film and television, the most of any distributor.",
+    "id": "qa_0025",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "82nd Golden Globe Awards",
+    "question": "Who became the first Brazilian actress to win a Golden Globe in an acting category at the 82nd Golden Globes?",
+    "answer": "Fernanda Torres",
+    "source_sentence": "Fernanda Torres became the first Brazilian actress to win a Golden Globe in an acting category, as well as the first Brazilian, first South American and first Portuguese-speaking actor to win the Golden Globe Award for Best Actress in a Motion Picture – Drama.",
+    "id": "qa_0026",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "82nd Golden Globe Awards",
+    "question": "How many nominations did Emilia Pérez receive at the 82nd Golden Globe Awards?",
+    "answer": "10",
+    "source_sentence": "Emilia Pérez, with 10 nominations, became the most nominated comedy/musical film in Golden Globes history, just 1 shy of the overall record of 11, set by Robert Altman's country music satire Nashville in the drama category in 1976.",
+    "id": "qa_0027",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "82nd Golden Globe Awards",
+    "question": "Which two presenters were originally announced for the 82nd Golden Globes but were not included in the final running order?",
+    "answer": "Aubrey Plaza and Rob McElhenney",
+    "source_sentence": "Furthermore, Aubrey Plaza and Rob McElhenney were originally announced as presenters on January 2, 2025, but were not included in the final running order on the day of the ceremony.",
+    "id": "qa_0028",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "81st Golden Globe Awards",
+    "question": "Who hosted the 81st Golden Globe Awards ceremony?",
+    "answer": "Jo Koy",
+    "source_sentence": "Comedian Jo Koy hosted the ceremony.",
+    "id": "qa_0030",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "81st Golden Globe Awards",
+    "question": "Who became the first Indigenous actor to win a Golden Globe Award at the 81st ceremony?",
+    "answer": "Lily Gladstone",
+    "source_sentence": "For her portrayal of Mollie Burkhart in Killers of the Flower Moon, Lily Gladstone became the first Indigenous actor to win a Golden Globe Award, winning for Best Actress in a Motion Picture – Drama.",
+    "id": "qa_0032",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "81st Golden Globe Awards",
+    "question": "Which network acquired the broadcast rights for the 81st Golden Globe Awards, replacing NBC?",
+    "answer": "CBS",
+    "source_sentence": "On November 17, 2023, it was announced that CBS had acquired the broadcast rights to the ceremony, replacing the Golden Globes' long-time U.S. broadcast partner NBC.",
+    "id": "qa_0033",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "81st Golden Globe Awards",
+    "question": "How many combined nominations did Barbenheimer receive at the 81st Golden Globes?",
+    "answer": "seventeen",
+    "source_sentence": "Additionally, the cultural phenomenon of \"Barbenheimer\" received seventeen nominations, winning seven.",
+    "id": "qa_0034",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "81st Golden Globe Awards",
+    "question": "How many voters threatened to withhold their final-round votes in protest at the 81st Golden Globe Awards?",
+    "answer": "64",
+    "source_sentence": "That same month, TheWrap reported that 64 voters threatened to withhold their final-round votes in protest, after being told that they would not be given tickets to the ceremony.",
+    "id": "qa_0035",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "81st Golden Globe Awards",
+    "question": "How many journalists made up the new group of voters selecting the nominees and winners at the 81st Golden Globes?",
+    "answer": "300",
+    "source_sentence": "With the awards no longer being overseen by the HFPA, a new, racially and ethnically diverse group of voters consisting of 300 journalists representing 76 countries selected the 2023 nominees and winners.",
+    "id": "qa_0036",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "81st Golden Globe Awards",
+    "question": "How many countries were represented by the new group of voters at the 81st Golden Globe Awards?",
+    "answer": "76",
+    "source_sentence": "With the awards no longer being overseen by the HFPA, a new, racially and ethnically diverse group of voters consisting of 300 journalists representing 76 countries selected the 2023 nominees and winners.",
+    "id": "qa_0037",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "Who hosted the 77th BAFTA Film Awards ceremony?",
+    "answer": "David Tennant",
+    "source_sentence": "The ceremony was hosted by David Tennant for the first time.",
+    "id": "qa_0040",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "Who received the BAFTA Fellowship at the 77th British Academy Film Awards?",
+    "answer": "Samantha Morton",
+    "source_sentence": "Samantha Morton",
+    "id": "qa_0041",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "Who received the Outstanding British Contribution to Cinema award at the 77th BAFTAs?",
+    "answer": "June Givanni",
+    "source_sentence": "June Givanni",
+    "id": "qa_0042",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "How many wins did Oppenheimer earn at the 77th BAFTAs, the most of any film?",
+    "answer": "seven",
+    "source_sentence": "The epic biographical thriller film Oppenheimer received the most nominations with thirteen and the most wins with seven, including Best Film, Best Director (Christopher Nolan) and Best Actor (Cillian Murphy).",
+    "id": "qa_0043",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "Who performed 'Murder on the Dancefloor' at the 77th BAFTA Film Awards ceremony?",
+    "answer": "Sophie Ellis-Bextor",
+    "source_sentence": "English singer and songwriter Sophie Ellis-Bextor performed her 2001 chart-topper \"Murder on the Dancefloor\", most recently known as the concluding viral song from the five-time BAFTA-nominated film Saltburn.",
+    "id": "qa_0044",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "Who delivered the musical performance of 'Time After Time' during the In Memoriam segment at the 77th BAFTAs?",
+    "answer": "Hannah Waddingham",
+    "source_sentence": "Additionally, British actress and television presenter Hannah Waddingham delivered an exclusive musical performance of the Cyndi Lauper song \"Time After Time\" during the \"In Memoriam\" segment.",
+    "id": "qa_0045",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "Who gatecrashed the Best Film acceptance speech at the 77th BAFTAs?",
+    "answer": "Lizwani",
+    "source_sentence": "While producer Emma Thomas was accepting the award for Best Film on behalf of Oppenheimer, social media personality Lizwani gatecrashed her speech.",
+    "id": "qa_0046",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "Who announced the nominees for the 77th British Academy Film Awards?",
+    "answer": "Naomi Ackie and Kingsley Ben-Adir",
+    "source_sentence": "The nominations were announced via livestream by former EE Rising Star Award nominees Naomi Ackie and Kingsley Ben-Adir, from the arts charity's HQ at 195 Piccadilly, London, on 18 January 2024.",
+    "id": "qa_0047",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "How many nominations did Poor Things receive at the 77th BAFTAs?",
+    "answer": "eleven",
+    "source_sentence": "Ultimately, Oppenheimer received the most nominations with thirteen, followed by Poor Things with eleven.",
+    "id": "qa_0048",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "77th British Academy Film Awards",
+    "question": "Who hosted the red carpet exclusively on BAFTA's TikTok channel at the 77th BAFTAs?",
+    "answer": "Zainab Jiwa",
+    "source_sentence": "while Zainab Jiwa was live from the red carpet exclusively on BAFTA's TikTok channel from 15:00–16:00 GMT.",
+    "id": "qa_0049",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Who received the BAFTA Fellowship at the 78th British Academy Film Awards?",
+    "answer": "Warwick Davis",
+    "source_sentence": "Warwick Davis",
+    "id": "qa_0050",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Which organisation received the Outstanding British Contribution to Cinema award at the 78th BAFTAs?",
+    "answer": "MediCinema",
+    "source_sentence": "MediCinema",
+    "id": "qa_0051",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "How many personal nominations did Rich Peppiatt receive at the 78th BAFTAs, making him the most-nominated debut director?",
+    "answer": "four",
+    "source_sentence": "filmmaker Rich Peppiatt became the most-nominated debut director at the BAFTAs with four personal nominations for Kneecap.",
+    "id": "qa_0052",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Which film did Rich Peppiatt direct that earned him four personal BAFTA nominations at the 78th ceremony?",
+    "answer": "Kneecap",
+    "source_sentence": "filmmaker Rich Peppiatt became the most-nominated debut director at the BAFTAs with four personal nominations for Kneecap.",
+    "id": "qa_0053",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Who won the EE Rising Star Award at the 78th BAFTAs, considered a surprising result?",
+    "answer": "David Jonsson",
+    "source_sentence": "Winners considered surprising were David Jonsson for the EE Rising Star Award and Mikey Madison winning Best Actress in a Leading Role.",
+    "id": "qa_0054",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Which song did David Tennant perform in his introduction to the 78th BAFTA ceremony?",
+    "answer": "I'm Gonna Be (500 Miles)",
+    "source_sentence": "In his introduction to the ceremony, Tennant performed \"I'm Gonna Be (500 Miles)\" by The Proclaimers before his monologue full of dad jokes.",
+    "id": "qa_0055",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Who performed 'As Time Goes By' on piano during the In Memoriam segment at the 78th BAFTAs?",
+    "answer": "Jeff Goldblum",
+    "source_sentence": "The In Memoriam was accompanied by actor Jeff Goldblum, performing \"As Time Goes By\" on piano, and paid tribute to the following.",
+    "id": "qa_0056",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Which new category was awarded for the first time at the 78th BAFTA Film Awards?",
+    "answer": "Best Children's & Family Film",
+    "source_sentence": "The Best Children's & Family Film was awarded for the first time in 2025, having been announced in 2023 as the first new category since the introduction of Best Casting in 2020.",
+    "id": "qa_0057",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Who announced the nominations for the 78th BAFTA Film Awards?",
+    "answer": "Mia McKenna-Bruce and Will Sharpe",
+    "source_sentence": "The nominations for all the other categories were unveiled on 15 January 2025 by previous BAFTA Award winners Mia McKenna-Bruce and Will Sharpe.",
+    "id": "qa_0058",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "78th British Academy Film Awards",
+    "question": "Which Take That song was performed at the 78th BAFTA ceremony, having featured prominently in the nominee Anora?",
+    "answer": "Greatest Day",
+    "source_sentence": "Ahead of the acting and other major awards being announced, Take That performed their song \"Greatest Day\", which featured prominently in nominee Anora.",
+    "id": "qa_0059",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "Who became the youngest nominee in Grammy Awards history at the 66th ceremony?",
+    "answer": "Hazel",
+    "source_sentence": "Monét's 2-year-old daughter, Hazel, became the youngest nominee in Grammy Awards history; she was a featured artist on her mother's song \"Hollywood\", which was nominated for Best Traditional R&B Performance.",
+    "id": "qa_0060",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "Who won the inaugural Best African Performance award at the 66th Grammy Awards?",
+    "answer": "Tyla",
+    "source_sentence": "South African singer Tyla was the winner of the inaugural Best African Performance award.",
+    "id": "qa_0061",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "Which band became the first female-fronted rock band to win the Grammy Award for Best Rock Album?",
+    "answer": "Paramore",
+    "source_sentence": "Paramore became the first female-fronted rock band to win the Grammy Award for Best Rock Album.",
+    "id": "qa_0062",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "How many total categories were there at the 66th Annual Grammy Awards?",
+    "answer": "94",
+    "source_sentence": "Three new categories – Best African Music Performance, Best Alternative Jazz Album and Best Pop Dance Recording – were added. There are 94 categories total.",
+    "id": "qa_0063",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "What album did Taylor Swift announce while accepting her Best Pop Vocal Album award at the 66th Grammys?",
+    "answer": "The Tortured Poets Department",
+    "source_sentence": "Swift announced the release of her album The Tortured Poets Department while accepting the award for Best Pop Vocal Album.",
+    "id": "qa_0064",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "Who hosted the Premiere ceremony at the 66th Annual Grammy Awards?",
+    "answer": "Justin Tranter",
+    "source_sentence": "Justin Tranter was announced as the host for the Premiere ceremony on January 25, 2024, alongside the list of presenters.",
+    "id": "qa_0065",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "Which engineer extended his record with a fifth Album of the Year-category award at the 66th Grammys?",
+    "answer": "Serban Ghenea",
+    "source_sentence": "Engineer Serban Ghenea extended his record with a fifth award in the category as well.",
+    "id": "qa_0066",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "Which artist performed at the Grammys from their residency at Sphere in Las Vegas?",
+    "answer": "U2",
+    "source_sentence": "U2 joined the lineup on January 27, with a performance from their U2:UV residency at Sphere in Las Vegas.",
+    "id": "qa_0067",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "Who received the MusiCares Person of the Year award at the 66th Grammy Awards?",
+    "answer": "Jon Bon Jovi",
+    "source_sentence": "Jon Bon Jovi",
+    "id": "qa_0068",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "66th Annual Grammy Awards",
+    "question": "Which IBM generative AI tool was used to generate editorial content around nominees at the 66th Grammy Awards?",
+    "answer": "Watsonx",
+    "source_sentence": "Watsonx, a generative AI tool of IBM, was used to generate editorial content around nominees during the presentation.",
+    "id": "qa_0069",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "Which song tied with 'Up, Up and Away' to become the joint-most decorated song in Grammy history?",
+    "answer": "Not Like Us",
+    "source_sentence": "Kendrick Lamar's \"Not Like Us\" swept all five of its nominations, which included Record of the Year and Song of the Year, tying with \"Up, Up and Away\" to become the joint-most decorated song in Grammy Awards history.",
+    "id": "qa_0070",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "Who won Best New Artist at the 67th Annual Grammy Awards?",
+    "answer": "Chappell Roan",
+    "source_sentence": "Chappell Roan took home Best New Artist, and Sierra Ferrell swept the American roots categories, winning all four of her nominations.",
+    "id": "qa_0071",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "Who swept the American roots categories at the 67th Grammys, winning all four nominations?",
+    "answer": "Sierra Ferrell",
+    "source_sentence": "Chappell Roan took home Best New Artist, and Sierra Ferrell swept the American roots categories, winning all four of her nominations.",
+    "id": "qa_0072",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "What was the title of the Best Rap Album winner by Doechii at the 67th Grammy Awards?",
+    "answer": "Alligator Bites Never Heal",
+    "source_sentence": "Best New Artist nominee Doechii won Best Rap Album for Alligator Bites Never Heal, becoming the third woman to win the award after Hill (with the Fugees) in 1997 and Cardi B in 2019.",
+    "id": "qa_0073",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "Which small business was featured with Doja Cat in a wildfire-relief commercial during the 67th Grammy Awards broadcast?",
+    "answer": "Orla Floral Studio",
+    "source_sentence": "Featured businesses included Orla Floral Studio of Altadena with an appearance by Doja Cat, Two Dragons Martial Arts of Altadena with an appearance by Charlie Puth, Rhythms Of The Village of Altadena with an appearance by Anderson .Paak, Paliskates Skate Shop in Pacific Palisades with an appearance by Avril Lavigne, and the L.A. Lost Stuffy Project with an appearance by the Jonas Brothers.",
+    "id": "qa_0074",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "Which Beatles song became the first AI-assisted production to be nominated for a Grammy?",
+    "answer": "Now and Then",
+    "source_sentence": "\"Now and Then\" by the Beatles is the first song produced with the help of artificial intelligence to be nominated for a Grammy.",
+    "id": "qa_0075",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "What was Beyoncé's career total of Grammy nominations after the 67th ceremony announcements?",
+    "answer": "99",
+    "source_sentence": "With a career total of 99 nominations, Beyoncé became the most nominated artist in Grammy history, breaking a tie with her husband Jay-Z.",
+    "id": "qa_0076",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "Which album by Anitta became the first funk carioca album nominated for a Grammy?",
+    "answer": "Funk Generation",
+    "source_sentence": "Anitta's Funk Generation is the first funk carioca album to be nominated for a Grammy.",
+    "id": "qa_0077",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "Who received the Salute To Industry Icons honor at the 67th Grammy Awards?",
+    "answer": "Jody Gerson",
+    "source_sentence": "Jody Gerson",
+    "id": "qa_0078",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "67th Annual Grammy Awards",
+    "question": "Which band was named MusiCares Persons of the Year for the 67th Grammy Awards?",
+    "answer": "Grateful Dead",
+    "source_sentence": "Grateful Dead",
+    "id": "qa_0079",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which American psychedelic rock keyboardist and Iron Butterfly member died in May 2024?",
+    "answer": "Doug Ingle",
+    "source_sentence": "24 – Doug Ingle, 78, American psychedelic rock singer-songwriter and keyboardist (Iron Butterfly)",
+    "id": "qa_0080",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "At what age did Glynis Johns, the British musical theatre actress and singer, die in January 2024?",
+    "answer": "100",
+    "source_sentence": "Glynis Johns, 100, British musical theatre actress and singer",
+    "id": "qa_0081",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which former One Direction member died in October 2024 at the age of 31?",
+    "answer": "Liam Payne",
+    "source_sentence": "Liam Payne, 31, English pop singer (One Direction)",
+    "id": "qa_0082",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which Grateful Dead bassist died in October 2024?",
+    "answer": "Phil Lesh",
+    "source_sentence": "25 – Phil Lesh, 84, American psychedelic rock singer-songwriter and bassist (Grateful Dead)",
+    "id": "qa_0083",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which American record producer, songwriter, arranger, and jazz trumpeter died on November 3, 2024 at age 91?",
+    "answer": "Quincy Jones",
+    "source_sentence": "Quincy Jones, 91, American record producer, songwriter, arranger, and jazz trumpeter",
+    "id": "qa_0084",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which South Korean record producer died in February 2024 at the age of 40?",
+    "answer": "Shinsadong Tiger",
+    "source_sentence": "Shinsadong Tiger, 40, South Korean record producer",
+    "id": "qa_0085",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which American post-hardcore musician and record producer, known for Big Black and Shellac, died in May 2024?",
+    "answer": "Steve Albini",
+    "source_sentence": "Steve Albini, 61, American post-hardcore and noise rock singer and guitarist (Big Black, Shellac) and record producer",
+    "id": "qa_0086",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which French pop and yé-yé singer-songwriter died on June 11, 2024?",
+    "answer": "Françoise Hardy",
+    "source_sentence": "Françoise Hardy, 80, French pop and yé-yé singer-songwriter",
+    "id": "qa_0087",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which Indian classical and jazz fusion tabla player died on December 15, 2024?",
+    "answer": "Zakir Hussain",
+    "source_sentence": "Zakir Hussain, 73, Indian classical and jazz fusion tabla player (Shakti)",
+    "id": "qa_0088",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Music",
+    "question": "Which My Chemical Romance drummer was found dead in November 2024 at the age of 44?",
+    "answer": "Bob Bryar",
+    "source_sentence": "Bob Bryar, 44, American alternative rock drummer (My Chemical Romance) (body discovered on this date)",
+    "id": "qa_0089",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "Which film surpassed The Lion King to become the highest-grossing animated film of all time in 2024?",
+    "answer": "Inside Out 2",
+    "source_sentence": "Inside Out 2 surpassed The Lion King to become the highest-grossing animated film of all time and became the 8th highest grossing film of all time upon its release.",
+    "id": "qa_0090",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "Which film became the highest-grossing unrated film of all time in 2024?",
+    "answer": "Terrifier 3",
+    "source_sentence": "Terrifier 3 became the highest-grossing unrated film of all time.",
+    "id": "qa_0091",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "Who directed the Palme d'Or winner at the 77th Cannes Film Festival?",
+    "answer": "Sean Baker",
+    "source_sentence": "Anora, directed by Sean Baker, United States",
+    "id": "qa_0092",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "What film won the Golden Lion at the 81st Venice International Film Festival?",
+    "answer": "The Room Next Door",
+    "source_sentence": "The Room Next Door, directed by Pedro Almodóvar, Spain",
+    "id": "qa_0093",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "What film won the People's Choice Award at the 49th Toronto International Film Festival?",
+    "answer": "The Life of Chuck",
+    "source_sentence": "The Life of Chuck, directed by Mike Flanagan, United States",
+    "id": "qa_0094",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "Which animated film series became the first to gross $5 billion with a 2024 release?",
+    "answer": "Despicable Me",
+    "source_sentence": "The Despicable Me film franchise became the first animated film series to gross $5 billion with the release of Despicable Me 4.",
+    "id": "qa_0095",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "Deadpool & Wolverine surpassed which 1990 film's record to become the highest-grossing R-rated Disney film?",
+    "answer": "Pretty Woman",
+    "source_sentence": "Deadpool & Wolverine became the highest-grossing R-rated Disney film, surpassing the 34-year-old record set by Pretty Woman in 1990.",
+    "id": "qa_0097",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "In which film did Blue Ivy Carter make her film debut in 2024?",
+    "answer": "Mufasa: The Lion King",
+    "source_sentence": "Blue Ivy Carter – Mufasa: The Lion King",
+    "id": "qa_0098",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 in Film",
+    "question": "What film won the Golden Bear at the 74th Berlin International Film Festival?",
+    "answer": "Dahomey",
+    "source_sentence": "Dahomey, directed by Mati Diop, France",
+    "id": "qa_0099",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in Film",
+    "question": "Which studio became the first non-Hollywood studio to hold the distinction of producing the highest-grossing animated film?",
+    "answer": "Enlight Pictures",
+    "source_sentence": "Doing so, Enlight Pictures became the first non-Hollywood studio to hold this distinction.",
+    "id": "qa_0101",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in Film",
+    "question": "Who directed the Palme d'Or winner at the 78th Cannes Film Festival?",
+    "answer": "Jafar Panahi",
+    "source_sentence": "It Was Just an Accident, directed by Jafar Panahi, Iran",
+    "id": "qa_0102",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in Film",
+    "question": "Which film won the People's Choice Award at the 50th Toronto International Film Festival?",
+    "answer": "Hamnet",
+    "source_sentence": "Hamnet, directed by Chloé Zhao, United Kingdom & United States",
+    "id": "qa_0103",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in Film",
+    "question": "Which film surpassed Frozen 2 to become Walt Disney Animation Studios' highest-grossing film?",
+    "answer": "Zootopia 2",
+    "source_sentence": "On 31 December, thirty-six days after release, Zootopia 2 surpassed Frozen 2 to become Walt Disney Animation Studios' highest-grossing film.",
+    "id": "qa_0104",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in Film",
+    "question": "What was the worldwide opening weekend gross of Zootopia 2?",
+    "answer": "$560.3 million",
+    "source_sentence": "It claimed the fourth highest-grossing worldwide opening of all time ($560.3 million), placing behind Avengers: Endgame ($1.2 billion), Avengers: Infinity War ($641 million), and Spider-Man: No Way Home ($601 million).",
+    "id": "qa_0105",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in Film",
+    "question": "Which horror film surpassed It's record for the largest opening weekend for a horror film?",
+    "answer": "The Conjuring: Last Rites",
+    "source_sentence": "The Conjuring: Last Rites had a $194 million opening weekend worldwide, surpassing It's record ($190 million) for the largest opening weekend for a horror film.",
+    "id": "qa_0106",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in Film",
+    "question": "Who directed the Golden Lion winner at the 82nd Venice International Film Festival?",
+    "answer": "Jim Jarmusch",
+    "source_sentence": "Father Mother Sister Brother, directed by Jim Jarmusch, United States",
+    "id": "qa_0107",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Which country tied with the United States on gold medals at the 2024 Summer Olympics?",
+    "answer": "China",
+    "source_sentence": "China tied with the United States on gold (40), but finished second due to having fewer silvers; the nation won 91 medals overall.",
+    "id": "qa_0110",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who was the first torchbearer of the 2024 Olympic torch relay?",
+    "answer": "Stefanos Douskos",
+    "source_sentence": "Greek rower Stefanos Douskos was the first torchbearer and swimmer Laure Manaudou served as the first French torchbearer.",
+    "id": "qa_0111",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Which luxury jewellery firm designed the 2024 Paris Olympic medals?",
+    "answer": "Chaumet",
+    "source_sentence": "Approximately 5,084 medals would be produced by the French mint Monnaie de Paris, and were designed by Chaumet, a luxury jewellery firm based in Paris.",
+    "id": "qa_0112",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who was the refugee athlete that won the first-ever medal for the Refugee Olympic Team at the 2024 Olympics?",
+    "answer": "Cindy Ngamba",
+    "source_sentence": "The Refugee Olympic Team also won their first-ever medal: Cindy Ngamba, a refugee from Cameroon, won a bronze in boxing.",
+    "id": "qa_0113",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who directed the opening ceremony of the 2024 Paris Olympics?",
+    "answer": "Thomas Jolly",
+    "source_sentence": "Directed by Thomas Jolly, it was the first Summer Olympics opening ceremony to be held outside the traditional stadium setting; the parade of athletes was conducted as a boat parade along the Seine from Pont d'Austerlitz to Pont d'Iéna, and cultural segments took place at various landmarks along the route.",
+    "id": "qa_0114",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Which venue at the 2024 Paris Olympics served only plant-based food?",
+    "answer": "Place de la Concorde",
+    "source_sentence": "The Place de la Concorde, the venue that hosted the skateboarding, breakdancing and BMX events, only served plant-based food.",
+    "id": "qa_0116",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who produced the LA28 Handover Celebration portion of the 2024 Paris Olympics closing ceremony?",
+    "answer": "Ben Winston",
+    "source_sentence": "The Antwerp Ceremony, in which the Olympic flag was handed to Los Angeles, the host city of the 2028 Summer Olympics, was produced by Ben Winston and his studio Fulwell 73.",
+    "id": "qa_0117",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "How many terror plots targeting the 2024 Olympic and Paralympic Games did French authorities foil?",
+    "answer": "three",
+    "source_sentence": "Following the end of the Games, the national counterterrorism prosecutor, Olivier Christen, revealed that French authorities foiled three terror plots meant to attack the Olympic and Paralympic Games, resulting in the arrest of five suspects.",
+    "id": "qa_0118",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Summer Olympics",
+    "question": "Who designed the official Olympic poster for the 2024 Paris Games?",
+    "answer": "Ugo Gattoni",
+    "source_sentence": "Designed by Ugo Gattoni, the poster uses a diptych design, with one half representing the Olympics and the other half representing the Paralympics.",
+    "id": "qa_0119",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Who won the Player of the Tournament award at UEFA Euro 2024?",
+    "answer": "Rodri",
+    "source_sentence": "The Player of the Tournament award was given to Rodri, who was chosen by UEFA's technical observers.",
+    "id": "qa_0120",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Which team was the only debutant at UEFA Euro 2024?",
+    "answer": "Georgia",
+    "source_sentence": "Georgia beat Greece on penalties in the play-offs to qualify for their first-ever tournament since gaining independence from the Soviet Union in 1991, also becoming the only debutants for this edition and ensuring every final tournament since the inaugural Euro 1960 saw at least one new team make their debut.",
+    "id": "qa_0121",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Who set the record for the fastest goal in European Championship history at Euro 2024?",
+    "answer": "Nedim Bajrami",
+    "source_sentence": "Nedim Bajrami set the record for fastest goal scored in European Championship history, scoring in Albania's opener against Italy after just 23 seconds.",
+    "id": "qa_0122",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "What was the name of the official match ball of UEFA Euro 2024?",
+    "answer": "Fussballliebe",
+    "source_sentence": "The official match ball of the tournament, \"Fussballliebe\", was unveiled by UEFA and Adidas on 15 November 2023.",
+    "id": "qa_0123",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "What was chosen as the Goal of the Tournament at Euro 2024?",
+    "answer": "Lamine Yamal's semi-final goal",
+    "source_sentence": "On 16 July 2024, UEFA announced that Spanish winger Lamine Yamal's semi-final goal against France had been chosen as the best goal of the tournament.",
+    "id": "qa_0124",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Who became the oldest player to make an appearance at the European Championship during Euro 2024?",
+    "answer": "Pepe",
+    "source_sentence": "Portugal's Pepe became the oldest player to make an appearance at the European Championship, aged 41 years and 130 days in his side's quarter-final match against France.",
+    "id": "qa_0125",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "What was the name of the official Euro 2024 mascot?",
+    "answer": "Albärt",
+    "source_sentence": "Results were made public on 5 July, with the mascot's name announced to be \"Albärt\", getting 32% of the votes.",
+    "id": "qa_0126",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Whose group stage goal against Georgia was voted the Fans' Goal of the Tournament at Euro 2024?",
+    "answer": "Mert Müldür",
+    "source_sentence": "On 20 July 2024, after an open vote on the official Euro 2024 website, UEFA announced that Turkish defender Mert Müldür's group stage goal against Georgia had been chosen as the fans' goal of the tournament.",
+    "id": "qa_0127",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Where was the final tournament draw for Euro 2024 held?",
+    "answer": "Elbphilharmonie in Hamburg",
+    "source_sentence": "The final tournament draw took place on 2 December 2023, 18:00 CET, at the Elbphilharmonie in Hamburg.",
+    "id": "qa_0128",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "UEFA Euro 2024",
+    "question": "Who replaced Kim Petras as a performer of the Euro 2024 official song?",
+    "answer": "Leony",
+    "source_sentence": "However, in March 2024, it was announced that Petras had withdrawn from production due to scheduling issues, and was replaced by German singer Leony.",
+    "id": "qa_0129",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "Who won the Golden Ball award at the 2024 FIFA Intercontinental Cup?",
+    "answer": "Vinícius Júnior",
+    "source_sentence": "Vinícius Júnior of Real Madrid won the Golden Ball award, sponsored by Adidas, which was jointly awarded with the Aramco Player of the Tournament to recognise the best player of the Intercontinental Cup.",
+    "id": "qa_0130",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "Which club won the Intercontinental Cup final in the inaugural 2024 edition?",
+    "answer": "Real Madrid",
+    "source_sentence": "Intercontinental Cup:  Real Madrid",
+    "id": "qa_0131",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "Which club won the Derby of the Americas at the 2024 FIFA Intercontinental Cup?",
+    "answer": "Pachuca",
+    "source_sentence": "Derby of the Americas:  Pachuca",
+    "id": "qa_0132",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "Which club won the African-Asian-Pacific Cup at the 2024 FIFA Intercontinental Cup?",
+    "answer": "Al Ahly",
+    "source_sentence": "African–Asian–Pacific Cup:  Al Ahly",
+    "id": "qa_0133",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "In which city was the final of the 2024 FIFA Intercontinental Cup played?",
+    "answer": "Lusail, Qatar",
+    "source_sentence": "Final: The winners of the play-off (FIFA Challenger Cup) played the winners of the 2023–24 UEFA Champions League in Lusail, Qatar.",
+    "id": "qa_0134",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "On what date did the FIFA Council approve the details of the Intercontinental Cup format?",
+    "answer": "17 December 2023",
+    "source_sentence": "The details were approved by the FIFA Council on 17 December 2023, with the format formally confirmed on 20 September 2024.",
+    "id": "qa_0135",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "What was the second-round match between the CONCACAF and CONMEBOL representatives called?",
+    "answer": "FIFA Derby of the Americas",
+    "source_sentence": "In parallel, the winners of the 2024 Copa Libertadores and the winners of the 2024 CONCACAF Champions Cup played each other in Doha, Qatar, in a match that will be denominated the \"FIFA Derby of the Americas\".",
+    "id": "qa_0136",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "What was the name of the play-off match at the 2024 FIFA Intercontinental Cup?",
+    "answer": "FIFA Challenger Cup",
+    "source_sentence": "Play-off: The winners of the second round matches played each other in Doha, Qatar in the \"FIFA Challenger Cup\".",
+    "id": "qa_0137",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 FIFA Intercontinental Cup",
+    "question": "How many teams comprised the 2024 FIFA Intercontinental Cup tournament?",
+    "answer": "six",
+    "source_sentence": "The tournament comprised the six teams that won the previous edition of the continental championships in each FIFA confederation, playing each other in a single-elimination bracket.",
+    "id": "qa_0139",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the 2025 Australian Open women's singles title?",
+    "answer": "Madison Keys",
+    "source_sentence": "Madison Keys won the women's singles champion, after defeating two-time defending champion Aryna Sabalenka in the final.",
+    "id": "qa_0140",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the boys' singles title at the 2025 Australian Open?",
+    "answer": "Henry Bernet",
+    "source_sentence": "Henry Bernet def.  Benjamin Willwerth, 6–3, 6–4",
+    "id": "qa_0141",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "What was the total prize money for the 2025 Australian Open?",
+    "answer": "A$96,500,000",
+    "source_sentence": "The Australian Open total prize money for 2025 increased by 11.6% year on year to a tournament record A$96,500,000.",
+    "id": "qa_0142",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the girls' singles title at the 2025 Australian Open?",
+    "answer": "Wakana Sonobe",
+    "source_sentence": "Wakana Sonobe def.  Kristina Penickova, 6–0, 6–1",
+    "id": "qa_0143",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who won the wheelchair men's singles title at the 2025 Australian Open?",
+    "answer": "Alfie Hewett",
+    "source_sentence": "Alfie Hewett def.  Tokito Oda, 6–4, 6–4",
+    "id": "qa_0144",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Which Channel 9 presenter called Djokovic 'overrated' during the 2025 Australian Open?",
+    "answer": "Tony Jones",
+    "source_sentence": "During a Nine News Melbourne broadcast on 17 January, Channel 9 presenter Tony Jones was standing in front of a crowd of Serbian fans when he said Djokovic was \"overrated\" and a \"has-been\", followed by \"kick him out\".",
+    "id": "qa_0146",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Which sport was presented for the first time at the Australian Open in 2025?",
+    "answer": "pickleball",
+    "source_sentence": "The 2025 Australian Open became the first Australian Open to present pickleball.",
+    "id": "qa_0148",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 Australian Open",
+    "question": "Who defeated Learner Tien's conqueror Daniil Medvedev and then criticised on-court interview negativity at the 2025 Australian Open?",
+    "answer": "Ben Shelton",
+    "source_sentence": "On 22 January, during a press conference after winning his quarterfinal match, Ben Shelton criticised the \"negativity\" and style of questions being asked by interviewers after matches in the on-court interviews.",
+    "id": "qa_0149",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Who won the ladies' singles title at the 2024 Wimbledon Championships?",
+    "answer": "Barbora Krejčíková",
+    "source_sentence": "Barbora Krejčíková defeated Jasmine Paolini in the final to win the ladies' singles title.",
+    "id": "qa_0150",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Which lucky loser became the first to reach the fourth round at Wimbledon since Dick Norman in 1995?",
+    "answer": "Giovanni Mpetshi Perricard",
+    "source_sentence": "Giovanni Mpetshi Perricard became the first lucky loser to reach the fourth round at Wimbledon since Dick Norman in 1995.",
+    "id": "qa_0151",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Which defending Wimbledon women's singles champion lost in the first round in 2024?",
+    "answer": "Markéta Vondroušová",
+    "source_sentence": "Four seeded players lost in the first round, most notably the No. 6 seed and defending champion Markéta Vondroušová.",
+    "id": "qa_0153",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Who became the first Italian woman to reach the Wimbledon singles semifinals in the Open Era at the 2024 Championships?",
+    "answer": "Jasmine Paolini",
+    "source_sentence": "Seventh seed Jasmine Paolini defeated 17th seed Emma Navarro in straight sets to become the first Italian woman to reach the semifinals in the Open Era.",
+    "id": "qa_0154",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Who won the boys' singles title at the 2024 Wimbledon Championships, becoming the first Norwegian to win a junior major singles title?",
+    "answer": "Nicolai Budkov Kjær",
+    "source_sentence": "Nicolai Budkov Kjær won the championship by emerging victorious against his Dutch opponent in straight sets, becoming the first Norwegian to win a junior major singles title.",
+    "id": "qa_0156",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "Which Mexican pair became the first Mexican duo to reach the mixed doubles final at Wimbledon in 2024?",
+    "answer": "Santiago González and Giuliana Olmos",
+    "source_sentence": "In the semifinals, Santiago González and Giuliana Olmos defeated the pair of Ulrikke Eikeri and Máximo González in straight sets. By doing so, they became the first Mexican duo to reach the mixed doubles final at Wimbledon.",
+    "id": "qa_0157",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Wimbledon Championships",
+    "question": "What was the total prize money for the 2024 Wimbledon Championships?",
+    "answer": "£50,000,000",
+    "source_sentence": "The Wimbledon Championships total prize money for 2024 is £50,000,000, an increase of 11.86% from the 2023 edition.",
+    "id": "qa_0159",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who won the first stage of the 2024 Tour de France and earned the first yellow jersey?",
+    "answer": "Romain Bardet",
+    "source_sentence": "Romain Bardet narrowly won the opening stage from a breakaway with teammate Frank van den Broek, five seconds ahead of the peloton, to earn the first yellow jersey.",
+    "id": "qa_0160",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who became the first Black African to win a stage on the Tour de France in 2024?",
+    "answer": "Biniam Girmay",
+    "source_sentence": "The Eritrean rider Biniam Girmay crossed the finish line first, becoming the first Black African to win a stage on the Tour.",
+    "id": "qa_0161",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who became the first Ecuadorian to wear the Tour de France's yellow jersey in 2024?",
+    "answer": "Richard Carapaz",
+    "source_sentence": "The reigning Olympic road race champion Richard Carapaz finished the day atop the overall standings, becoming the first Ecuadorian to wear the Tour's yellow jersey.",
+    "id": "qa_0162",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "In which city did the 2024 Tour de France finish instead of Paris?",
+    "answer": "Nice",
+    "source_sentence": "It started in Florence, Italy, on 29 June, and finished in Nice, France, on 21 July.",
+    "id": "qa_0163",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "How many stages did Tadej Pogačar win at the 2024 Tour de France?",
+    "answer": "six",
+    "source_sentence": "Pogačar won six stages, including the last three.",
+    "id": "qa_0164",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who won the mountains classification at the 2024 Tour de France?",
+    "answer": "Carapaz",
+    "source_sentence": "Carapaz won the mountains classification and the overall combativity award; and Evenepoel won the young rider classification.",
+    "id": "qa_0165",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Which rider won stage 5 to break Eddy Merckx's all-time record for Tour de France stage wins?",
+    "answer": "Mark Cavendish",
+    "source_sentence": "Mark Cavendish won the 5th stage, his 35th stage victory at the Tour de France, breaking the record of 34 stage wins held by Eddy Merckx since 1975.",
+    "id": "qa_0166",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who won the points classification (green jersey) at the 2024 Tour de France?",
+    "answer": "Girmay",
+    "source_sentence": "Girmay won the points classification; Carapaz won the mountains classification and the overall combativity award; and Evenepoel won the young rider classification.",
+    "id": "qa_0167",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Which country hosted the Grand Départ of the Tour de France for the first time in 2024?",
+    "answer": "Italy",
+    "source_sentence": "Italy hosted the Grand Départ for the first time.",
+    "id": "qa_0168",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Tour de France",
+    "question": "Who won the chaotic stage 9 of the 2024 Tour de France with its gravel road sections?",
+    "answer": "Anthony Turgis",
+    "source_sentence": "A breakaway group was successful, with Frenchman Anthony Turgis winning the stage, Tom Pidcock coming second and Derek Gee third.",
+    "id": "qa_0169",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "What was the closest swing state in the 2024 presidential election by margin of victory?",
+    "answer": "Wisconsin",
+    "source_sentence": "Wisconsin, 0.86% (29,397 votes) – 10 electoral votes",
+    "id": "qa_0171",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "Who was the Libertarian Party's presidential nominee in the 2024 election?",
+    "answer": "Chase Oliver",
+    "source_sentence": "Chase Oliver was chosen by the Libertarian Party as its presidential nominee on May 26, 2024, at the 2024 Libertarian National Convention.",
+    "id": "qa_0172",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "How many electoral votes did Trump win in the 2024 presidential election?",
+    "answer": "312",
+    "source_sentence": "Trump won the election over Harris, winning 312 Electoral College votes to Harris' 226.",
+    "id": "qa_0173",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "What was the name of the shooter who attempted to assassinate Trump at the Butler, Pennsylvania rally?",
+    "answer": "Thomas Crooks",
+    "source_sentence": "Trump was shot and wounded on his right ear by 20-year-old Thomas Crooks, who fired eight rounds with an AR-15–style rifle from the roof of a building approximately 400 feet (120 metres) from the stage.",
+    "id": "qa_0174",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "What sentence was Ryan Wesley Routh given for the second assassination attempt on Trump?",
+    "answer": "life without parole",
+    "source_sentence": "Routh was sentenced to life without parole on February 4, 2026.",
+    "id": "qa_0175",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "By what percentage did the Trevor Project's crisis lines see an increase starting around midnight on election night?",
+    "answer": "125%",
+    "source_sentence": "The Trevor Project's crisis lines saw a 125% increase since around midnight on election night according to a statement by CEO Jaymes Black on November 6.",
+    "id": "qa_0176",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "What was Trump's popular vote percentage in the 2024 presidential election?",
+    "answer": "49.8%",
+    "source_sentence": "Trump won the national popular vote with a plurality of 49.8%, making him the first Republican to win the popular vote since George W. Bush in 2004.",
+    "id": "qa_0177",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "Which Democratic-leaning data firm released an analysis in May 2025 finding that Trump's victory rested on less politically engaged voters?",
+    "answer": "Catalist",
+    "source_sentence": "An analysis released by Democratic-leaning data firm Catalist in May 2025 found that Trump's victory rested on support from voters who were less engaged with politics.",
+    "id": "qa_0178",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 United States presidential election",
+    "question": "Where did Harris publicly concede the 2024 election to Trump?",
+    "answer": "Howard University",
+    "source_sentence": "Harris later conceded to Trump via a phone call, and publicly conceded the election to Trump that afternoon during a speech at Howard University.",
+    "id": "qa_0179",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Who was elected president of Lebanon following a two-year vacancy in January 2025?",
+    "answer": "Joseph Aoun",
+    "source_sentence": "Joseph Aoun is elected president of Lebanon following a two-year vacancy.",
+    "id": "qa_0180",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Which country became the 40th country to legalize same-sex marriage in January 2025?",
+    "answer": "Thailand",
+    "source_sentence": "January 23 – Thailand becomes the 40th country to legalize same-sex marriage.",
+    "id": "qa_0181",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Who was elected leader of the Liberal Party of Canada to replace Trudeau as prime minister in March 2025?",
+    "answer": "Mark Carney",
+    "source_sentence": "The Liberal Party of Canada holds a leadership election to replace Trudeau as prime minister and Mark Carney was elected at the end of a leadership election as a result.",
+    "id": "qa_0182",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Who was named as Nepal's first female prime minister in September 2025?",
+    "answer": "Sushila Karki",
+    "source_sentence": "Sushila Karki was named as Nepal's first female prime minister following the resignation of K. P. Sharma Oli as a result of the 2025 Nepalese Gen Z protests.",
+    "id": "qa_0183",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Who was awarded the 2025 Nobel Peace Prize?",
+    "answer": "María Corina Machado",
+    "source_sentence": "Venezuelan opposition politician and activist María Corina Machado was awarded the 2025 Nobel Peace Prize.",
+    "id": "qa_0184",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Who won the 2025 South Korean presidential election?",
+    "answer": "Lee Jae-myung",
+    "source_sentence": "The 2025 South Korean presidential election was held, with opposition candidate Lee Jae-myung winning a decisive victory.",
+    "id": "qa_0185",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Who was sworn in as the first female prime minister of Japan in October 2025?",
+    "answer": "Sanae Takaichi",
+    "source_sentence": "Sanae Takaichi was sworn is as the first female prime minister of Japan.",
+    "id": "qa_0186",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Which American right-wing activist was assassinated in September 2025 while speaking at a college in Utah?",
+    "answer": "Charlie Kirk",
+    "source_sentence": "Charlie Kirk, an American right-wing activist, was assassinated while speaking at a college in Utah.",
+    "id": "qa_0187",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Who won a landslide victory in the 2025 Irish presidential election?",
+    "answer": "Catherine Connolly",
+    "source_sentence": "The 2025 Irish presidential election was held, resulting in a landslide victory for independent candidate Catherine Connolly.",
+    "id": "qa_0188",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in politics",
+    "question": "Which Grand Duke abdicated the throne of Luxembourg in October 2025 in favor of his son Guillaume?",
+    "answer": "Henri",
+    "source_sentence": "Henri, Grand Duke of Luxembourg abdicated the throne in favor of his son Guillaume, who reigns as Guillaume V.",
+    "id": "qa_0189",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Booker Prize",
+    "question": "What novel won the 2024 Booker Prize?",
+    "answer": "Orbital",
+    "source_sentence": "The winner, Samantha Harvey for her sci-fi novel Orbital, was announced on 12 November 2024 at Old Billingsgate in London.",
+    "id": "qa_0190",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Booker Prize",
+    "question": "Who chaired the judging panel for the 2024 Booker Prize?",
+    "answer": "Edmund de Waal",
+    "source_sentence": "Edmund de Waal (chair)",
+    "id": "qa_0191",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Booker Prize",
+    "question": "How many pages long was the 2024 Booker Prize-winning novel Orbital?",
+    "answer": "136 pages",
+    "source_sentence": "At 136 pages, Orbital was the second shortest novel to be awarded a Booker Prize.",
+    "id": "qa_0192",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Booker Prize",
+    "question": "What was Samantha Harvey's debut novel that was previously longlisted for the Booker Prize?",
+    "answer": "The Wilderness",
+    "source_sentence": "Harvey had previously been nominated for a Booker Prize when her 2009 debut novel The Wilderness was longlisted for the award.",
+    "id": "qa_0194",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Booker Prize",
+    "question": "What is the shortest novel ever to win the Booker Prize?",
+    "answer": "Offshore",
+    "source_sentence": "At 136 pages, Orbital was the second shortest novel to be awarded a Booker Prize (with the shortest novel being Penelope Fitzgerald's 1979 winning work Offshore).",
+    "id": "qa_0195",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Booker Prize",
+    "question": "Who was the first Native American author ever to be longlisted for the Booker Prize?",
+    "answer": "Tommy Orange",
+    "source_sentence": "The longlist also featured the first Dutch (van der Wouden) and Native American (Tommy Orange) authors ever to be longlisted.",
+    "id": "qa_0196",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Booker Prize",
+    "question": "Where was the 2024 Booker Prize winner announcement ceremony held?",
+    "answer": "Old Billingsgate",
+    "source_sentence": "The winner, Samantha Harvey for her sci-fi novel Orbital, was announced on 12 November 2024 at Old Billingsgate in London.",
+    "id": "qa_0198",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Booker Prize",
+    "question": "How many authors on the 2024 Booker Prize longlist were debut novelists?",
+    "answer": "three",
+    "source_sentence": "Of the thirteen authors on the 2024 longlist, announced on 30 July 2024, three (Colin Barrett, Rita Bullwinkel, Yael van der Wouden) were debut novelists.",
+    "id": "qa_0199",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Pulitzer Prize",
+    "question": "On what date were the 2024 Pulitzer Prizes awarded?",
+    "answer": "May 6, 2024",
+    "source_sentence": "The 2024 Pulitzer Prizes were awarded by the Pulitzer Prize Board for work during the 2023 calendar year on May 6, 2024.",
+    "id": "qa_0200",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Pulitzer Prize",
+    "question": "For work during which calendar year were the 2024 Pulitzer Prizes awarded?",
+    "answer": "2023 calendar year",
+    "source_sentence": "The 2024 Pulitzer Prizes were awarded by the Pulitzer Prize Board for work during the 2023 calendar year on May 6, 2024.",
+    "id": "qa_0201",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in literature",
+    "question": "Which famous Japanese author celebrated a 100th birth anniversary on January 14, 2025?",
+    "answer": "Yukio Mishima",
+    "source_sentence": "14 January – Yukio Mishima was born in 1925 (100th Anniversary).",
+    "id": "qa_0202",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in literature",
+    "question": "Which famous American author born in 1775 celebrated a 250th anniversary on December 16, 2025?",
+    "answer": "Jane Austen",
+    "source_sentence": "16 December – Jane Austen was born in 1775 (250th Anniversary).",
+    "id": "qa_0203",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in literature",
+    "question": "Which German author born in 1875 celebrated a 150th anniversary on June 6, 2025?",
+    "answer": "Thomas Mann",
+    "source_sentence": "6 June – Thomas Mann was born in 1875 (150th Anniversary).",
+    "id": "qa_0204",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in literature",
+    "question": "Which Italian author who died in 1375 had a 650th anniversary in 2025?",
+    "answer": "Giovanni Boccaccio",
+    "source_sentence": "21 December – Giovanni Boccaccio died in 1375 (650th Anniversary).",
+    "id": "qa_0205",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2025 in literature",
+    "question": "Which fantasy author born in 1975 celebrated a 50th birthday on December 19, 2025?",
+    "answer": "Brandon Sanderson",
+    "source_sentence": "Brandon Sanderson was born in 1975 (50th Anniversary).",
+    "id": "qa_0206",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "Who performed at the 2024 Nobel Prize Concert as opera singer?",
+    "answer": "Malin Byström",
+    "source_sentence": "On December 8, as well, opera singer Malin Byström and conductor Petr Popelka performed at the Nobel Prize Concert.",
+    "id": "qa_0207",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "Who was the conductor at the 2024 Nobel Prize Concert?",
+    "answer": "Petr Popelka",
+    "source_sentence": "On December 8, as well, opera singer Malin Byström and conductor Petr Popelka performed at the Nobel Prize Concert.",
+    "id": "qa_0208",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "Who was the chef that set the menu for the 2024 Nobel Banquet?",
+    "answer": "Jessie Sommarström",
+    "source_sentence": "The menu for the Nobel Banquet, scheduled for December 10, was set by chef Jessie Sommarström and pastry chef Frida Bäcke.",
+    "id": "qa_0209",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "Who was the pastry chef for the 2024 Nobel Banquet?",
+    "answer": "Frida Bäcke",
+    "source_sentence": "The menu for the Nobel Banquet, scheduled for December 10, was set by chef Jessie Sommarström and pastry chef Frida Bäcke.",
+    "id": "qa_0210",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "Whose wife Rosalind Lee was noted as a potential snub for the 2024 Nobel Prize in Physiology or Medicine?",
+    "answer": "Victor Ambros",
+    "source_sentence": "Victor Ambros expressed, “It would have been terrific if we could have shared” the prize.",
+    "id": "qa_0211",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "What publication called the 2024 Prize in Economic Sciences one of the most controversial in recent history?",
+    "answer": "The Atlantic",
+    "source_sentence": "The Atlantic called the Prize in Economic Sciences in 2024 to be one of the most controversial in recent history.",
+    "id": "qa_0212",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "Which 2024 Nobel Physics laureate's award provoked debates about the lack of recognition for computation and mathematics?",
+    "answer": "Hinton",
+    "source_sentence": "Hinton's awarding of the Prize in Physics, for research on machine learning, provoked debates about the lack of recognition for computation and mathematics in the Nobel Foundation's categories.",
+    "id": "qa_0213",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "From which dates did the Nobel Prize Museum set up citywide illuminations across Oslo in 2024?",
+    "answer": "November 30 to December 8",
+    "source_sentence": "From November 30 to December 8, the Nobel Prize Museum set up citywide illuminations across Oslo.",
+    "id": "qa_0214",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "On what dates were the 2024 Nobel Prize winners announced?",
+    "answer": "October 7 to October 14",
+    "source_sentence": "The winners in each category were announced from October 7 to October 14.",
+    "id": "qa_0215",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "2024 Nobel Prizes",
+    "question": "Which three economists' work was criticized for inaccurately describing and analyzing history in the 2024 Economics Nobel controversy?",
+    "answer": "Acemoglu, Johnson, and Robinson",
+    "source_sentence": "Acemoglu, Johnson, and Robinson's work was criticized by historians and social scientists for inaccurately describing and analyzing history.",
+    "id": "qa_0216",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "Nobel Prize in Physics",
+    "question": "As of 2025, how many people have been awarded the Nobel Prize in Physics?",
+    "answer": "229",
+    "source_sentence": "As of 2025, a total of 229 people have been awarded the prize.",
+    "id": "qa_0217",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "Nobel Prize in Physiology or Medicine",
+    "question": "What was the 2025 Nobel Prize in Physiology or Medicine awarded for?",
+    "answer": "regulatory T cells",
+    "source_sentence": "The most recent Nobel prize was announced by the Nobel Assembly at Karolinska Institutet on 6 October 2025, and has been awarded to Americans Mary E. Brunkow and Fred Ramsdell, and Japanese scientist Shimon Sakaguchi, for their discoveries concerning peripheral immune tolerance and regulatory T cells.",
+    "id": "qa_0228",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "Nobel Prize in Physiology or Medicine",
+    "question": "As of 2025, how many Nobel Prizes in Physiology or Medicine have been awarded to individuals?",
+    "answer": "232",
+    "source_sentence": "As of 2024, 116 Nobel Prizes in Physiology or Medicine have been awarded to 232 laureates, 218 men and 14 women.",
+    "id": "qa_0229",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "Nobel Prize in Physiology or Medicine",
+    "question": "How many times through 2025 has the Nobel Prize in Physiology or Medicine been shared by three laureates?",
+    "answer": "41 times",
+    "source_sentence": "Through 2025, the prize has been awarded to a single individual 40 times, shared by two laureates 35 times, and shared by three laureates 41 times (the maximum allowed).",
+    "id": "qa_0230",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  },
+  {
+    "article": "Nobel Prize in Physiology or Medicine",
+    "question": "Who was the 2025 female Nobel laureate in Physiology or Medicine?",
+    "answer": "Mary E. Brunkow",
+    "source_sentence": "Thirteen women have received the prize: Gerty Cori (1947), Rosalyn Yalow (1977), Barbara McClintock (1983), Rita Levi-Montalcini (1986), Gertrude B. Elion (1988), Christiane Nüsslein-Volhard (1995), Linda B. Buck (2004), Françoise Barré-Sinoussi (2008), Elizabeth H. Blackburn (2009), Carol W. Greider (2009), May-Britt Moser (2014), Tu Youyou (2015), Katalin Karikó (2023) and Mary E. Brunkow (2025).",
+    "id": "qa_0236",
+    "extraction_model": "claude-opus-4-6",
+    "status": "verified",
+    "passed_filters": true
+  }
+]
