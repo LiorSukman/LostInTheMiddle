@@ -1,5 +1,5 @@
 # Serial Position Effects in LLMs — Research Plan
-### Multi-Document QA with TriviaQA | Preamble Length · Relative vs Absolute Position · Von Restorff
+### Multi-Document QA | Preamble Length · Relative vs Absolute Position · Von Restorff
 
 ---
 
@@ -9,66 +9,32 @@ The original Liu et al. (2023) paper showed that the KV retrieval task produced 
 
 ---
 
-## Dataset: TriviaQA (Wikipedia config)
+## Dataset: Wikipedia 2024-2025
 
-### Why TriviaQA
+### Background: TriviaQA was attempted and abandoned
 
-- Loads in 2 lines via HuggingFace `datasets`
-- Each example already ships with Wikipedia evidence passages (~6 per question)
-- Answers are short factoid strings (1–4 words), enabling exact-match scoring
-- Publicly available, no signup, Apache 2.0 license
+We initially built a dataset from TriviaQA (Wikipedia config) following the Liu et al. approach. After filtering 1,600 questions through short-answer, distractor availability, and closed-book gates, we obtained 147 verified questions. However, GPT-4o-mini's parametric memory (knowledge cutoff) was either too strong — the model answered most questions correctly regardless of gold document position, or the questions were too ambiguous / outdated, producing a flat accuracy curve (~48-51% across all positions) with no detectable U-shape. The dataset was abandoned in favor of a custom dataset built from post-training-cutoff content.
 
-### Setup
+### Current Dataset: Wikipedia 2024-2025 Events
 
-```python
-from datasets import load_dataset
+To eliminate parametric memory contamination, we built a dataset from Wikipedia articles about events after GPT-4o-mini's training cutoff (October 2023). The model cannot have memorized these facts, so every correct answer must come from the provided documents.
 
-# Use the rc.wikipedia config — passages are pre-chunked Wikipedia paragraphs
-dataset = load_dataset("mandarjoshi/trivia_qa", "rc.wikipedia", split="validation")
-```
+**Pipeline (implemented in `DatasetBuilder/`):**
 
-### Filtering to a Clean Working Set
+1. **Harvest** — Fetch 22 Wikipedia articles on recent events (Oscars, Olympics, Nobel Prizes, elections, Grammys, Wimbledon, Tour de France, Booker Prize, etc.)
+2. **Chunk** — Split articles into 80-115 word passages (573 chunks total)
+3. **QA extraction** — Generate question-answer pairs from chunks using Claude
+4. **Filter** — Remove questions answerable from general knowledge (closed-book gate), verify answer presence in source passage (oracle check), reject low-quality items (long answers, tautologies)
+5. **Distractor ranking** — For each question, rank all non-gold chunks by semantic similarity to the question (sentence-transformers `all-MiniLM-L6-v2`), select top-k as distractors
+6. **Validation** — Verify answer presence in gold passage, check for distractor contamination (answer appearing in a distractor)
 
-Not all TriviaQA examples are equally useful. Filter to questions where:
-1. The answer is ≤ 4 words (avoids long multi-part answers that break exact match)
-2. At least one evidence passage actually contains the answer string (verifiable gold document)
-3. The question is not answerable from the model's parametric memory alone (handle via closed-book baseline — see below)
+**Final datasets:**
+- `final_dataset.json` — 196 questions, 19 distractors each (20-document prompts)
+- `final_dataset_30.json` — 196 questions, 29 distractors each (30-document prompts)
 
-```python
-def is_usable(example):
-    answer = example["answer"]["value"]
-    if len(answer.split()) > 4:
-        return False
-    # Check at least one passage contains the answer
-    for doc in example["search_results"]["search_context"]:
-        if answer.lower() in doc.lower():
-            return True
-    return False
+**Domain distribution:** Film/Awards (66), Sports (53), Music (28), Politics (19), Literature (15), Science (15)
 
-clean = dataset.filter(is_usable)
-```
-
-Target: extract ~200 usable questions. This is more than enough for the experiments.
-
-### Document Preparation
-
-TriviaQA's Wikipedia passages are full articles — too long to use directly. Truncate each to the first 150–200 tokens (roughly one dense paragraph). This matches what Liu et al. did.
-
-For each question you need:
-- **1 gold document**: the passage from TriviaQA that contains the answer string
-- **19 distractor documents**: passages taken from *other* questions' evidence sets (so they're topically plausible but don't answer this question)
-
-```python
-def build_context(gold_doc, distractor_pool, gold_position, total_docs=20):
-    distractors = random.sample(distractor_pool, total_docs - 1)
-    docs = distractors.copy()
-    docs.insert(gold_position, gold_doc)
-    return docs
-```
-
-> ⚠️ **Parametric memory contamination**: TriviaQA questions are well-known trivia facts. Modern LLMs may answer correctly from parametric memory even when the gold document is buried. This adds noise — the model might get a middle-position question right not because it found the document but because it already knew the answer.
->
-> **Mitigation**: Always run a **closed-book baseline** at the start (same questions, no documents at all). Any question the model answers correctly in closed-book should be excluded from the main analysis, or flagged separately. This is what Liu et al. did too (they noted GPT-3.5 had ~56% closed-book accuracy on their set).
+**Quality checks:** 0 answer presence failures, 0 distractor contamination, 0 duplicate questions.
 
 ---
 
@@ -88,168 +54,165 @@ Question: {question}
 Answer with only the answer, no explanation:
 ```
 
-The instruction "Answer with only the answer, no explanation" is critical for exact-match scoring. Validate this works in your pilot — some models will add "Based on Document [3]..." preambles that break naive exact-match.
+The instruction "Answer with only the answer, no explanation" is critical for exact-match scoring.
 
 ---
 
 ## Scoring
 
 ```python
-import re
-
 def normalize(text):
     text = text.lower().strip()
     text = re.sub(r'[^\w\s]', '', text)  # strip punctuation
     return text
 
 def score(response: str, answer_aliases: list[str]) -> bool:
-    # TriviaQA provides multiple valid answer aliases (e.g. "JFK", "John Kennedy", "John F. Kennedy")
     norm_response = normalize(response)
     return any(normalize(alias) in norm_response for alias in answer_aliases)
 ```
 
-Use all aliases from `example["answer"]["aliases"]` — TriviaQA provides them and this avoids penalizing valid alternative phrasings.
+Each question has multiple valid answer aliases (e.g., `['5', 'five']` or `["Conan O'Brien", "O'Brien"]`). Scoring uses case-insensitive substring containment against all aliases.
 
-Manual validation pass: after each experiment run, spot-check ~20 cases where the model was marked incorrect. Some will be false negatives (the model was right but the alias matching failed).
-
----
-
-## Experiment 0 — Replication Baseline (Run First)
-
-Before testing novel hypotheses, replicate the original Liu et al. result on this dataset.
-
-**Design:**
-- 100 questions, 20 documents each
-- Gold document placed at each of positions 1, 5, 10, 15, 20
-- 20 trials per position (= 100 calls total per position × 5 positions = 500 calls)
-- No preamble
-- Temperature 0
-
-**Expected result:** U-shaped curve — high accuracy at positions 1 and 20, degraded at positions 5, 10, 15.
-
-**Gate:** If you don't see a meaningful U-shape, stop. Either the model is too strong (try a weaker/smaller one), the closed-book contamination is too high (filter more aggressively), or the distractor documents are too easy/too hard. Debug before continuing.
-
-> ⚠️ **Replication may not be perfect.** Liu et al. used NaturalQuestions with a specific retrieval pipeline for their distractors. Your distractor construction (sampling from other questions' passages) is simpler and may produce a different difficulty profile. This is fine for your purposes — you're establishing your own baseline, not reproducing their exact numbers.
+Manual validation pass: after each experiment, spot-check ~15 incorrect responses. Most errors are "I don't know" (genuine retrieval failures); occasional near-misses (correct answer phrased differently than any alias) are treated as noise since they occur symmetrically across conditions.
 
 ---
 
-## Backup Plan: Synthetic Dataset (if closed-book contamination is too high)
+## Statistical Tests
 
-If the closed-book baseline reveals that the model correctly answers more than ~30% of TriviaQA questions from parametric memory alone, the real-world dataset loses too much statistical power after filtering. In that case, switch to a fully synthetic dataset where contamination is impossible by construction.
+All experiments use within-subjects designs (every question tested at every condition), so tests must account for paired/repeated observations.
 
-### Core Idea
+### Primary tests
 
-Generate fictional entities — fake movies, fake public figures, fake companies — that cannot exist in any training corpus. The model has zero chance of answering from memory because the facts don't exist. Every correct answer is necessarily retrieved from the provided document.
-
-### What to Generate
-
-Use Claude or GPT to generate a bank of ~300 fictional Q&A pairs with associated evidence passages. Each entity should be coherent enough to sustain a realistic-looking Wikipedia-style paragraph, but clearly non-existent (unusual name combinations, invented awards, impossible dates, etc.).
-
-**Entity types that work well:**
-
-- **Fictional films**: invented titles, directors, actors, release years, plot summaries
-- **Fictional public figures**: scientists, politicians, athletes with invented names and biographical facts
-- **Fictional companies**: founding year, HQ city, CEO name, flagship product
-- **Fictional books/albums**: title, author/artist, year, publisher, notable achievement
-
-**Example generated Q&A pair:**
-```
-Question: Who directed the 1987 film "The Amber Corridor"?
-Answer: Vesna Kralik
-Gold document: "The Amber Corridor is a 1987 Yugoslav-French drama film 
-directed by Vesna Kralik. The film won the Silver Bear at the 38th Berlin 
-International Film Festival and starred Olivier Genet as a displaced 
-architect navigating post-industrial Europe..."
-```
-
-### Generation Prompt
-
-```python
-generation_prompt = """
-Generate 10 fictional Wikipedia-style Q&A pairs. Each must include:
-1. A factoid question with a short answer (1-4 words)
-2. A 150-word Wikipedia-style evidence paragraph that contains the answer
-3. The answer must appear naturally in the paragraph (not artificially inserted)
-
-Rules:
-- All entities (names, titles, places) must be completely invented
-- Use plausible-sounding but clearly non-existent proper nouns
-- Mix entity types: films, people, companies, books, events
-- Answers should be: person names, years, place names, or titles
-
-Format as JSON: [{"question": ..., "answer": ..., "passage": ...}]
-"""
-```
-
-Run this ~30 times to build a bank of 300 pairs, then manually review and discard any that accidentally reference real entities.
-
-### Distractor Generation
-
-For distractors, you have two options:
-
-**Option A — Cross-question distractors (same as TriviaQA approach):** Use passages from other synthetic questions. Since all entities are fake, there's no topical overlap risk.
-
-**Option B — Dedicated distractor passages:** Generate additional fictional passages on unrelated topics for each question. This gives you cleaner topical isolation but requires more generation calls.
-
-Option A is recommended for simplicity.
-
-### Advantages Over TriviaQA
-
-| | TriviaQA | Synthetic |
+| Test | Purpose | When to use |
 |---|---|---|
-| Parametric memory contamination | High risk | Zero by construction |
-| Closed-book filtering needed | Yes (~30-50% may need removal) | No |
-| Answer aliases needed | Yes (multiple valid forms) | No (single canonical answer) |
-| Setup complexity | Moderate | Moderate (generation cost) |
-| Ecological validity | High | Lower |
-| Experimental control | Moderate | Maximum |
+| **Cochran Q** | Omnibus test for whether accuracy differs across k related conditions (generalization of McNemar to k>2) | Test whether position or preamble condition affects accuracy across all levels |
+| **McNemar** (with continuity correction) | Pairwise test for whether two related conditions differ in accuracy | Compare specific pairs (e.g., edge vs middle, none vs long preamble) |
+| **Chi-squared test of independence** | Whether two categorical variables are associated | Quick check; less appropriate than Cochran Q for paired data but useful for confirmation |
 
-### Disadvantages
+### Correction for multiple comparisons
 
-- **Lower ecological validity**: fake facts feel less meaningful than real-world retrieval
-- **Generation cost**: ~30 API calls to generate 300 pairs, plus manual review (~1 hour)
-- **Potential model bias toward fictional-looking text**: some models may handle unusually-named entities differently than normal prose
-- **Not directly comparable to prior literature**: Liu et al. and others used real questions, so your results are harder to situate in the existing benchmark landscape
+When performing multiple pairwise McNemar tests, apply **Bonferroni correction** (multiply raw p-values by number of comparisons, cap at 1.0).
 
-### Recommendation
+### Effect size reporting
 
-Run TriviaQA first with the closed-book baseline filter. If your usable pool after filtering drops below ~100 questions, switch to the synthetic dataset for the main experiments. You can still use TriviaQA results as a replication section and synthetic results as the novel contribution section — the contrast between the two is itself an interesting methodological finding worth a paragraph in the writeup.
+For each experiment, report:
+- **U-effect**: edge accuracy − middle accuracy (the core LITM measure)
+- **Per-position accuracy** with 95% CI (binomial standard error × 1.96)
+- **Odds ratio** for edge vs non-edge conditions where relevant
 
-An even better approach: run both in parallel on Experiment 0 (replication). If both show a clean U-curve, use TriviaQA for replication and synthetic for Experiments 1–3 where you need maximum control. This gives your notebook two distinct sections with clearly different validity profiles.
+### Position-sensitive question analysis
+
+Questions that are always correct or always wrong regardless of position contribute zero signal to positional tests (they have no discordant pairs). We report the full-dataset analysis as primary, and include a supplementary "position-sensitive only" analysis that isolates the questions where position actually mattered. Note: Cochran Q values are identical for both (constant questions contribute nothing to the statistic), but chi-squared and descriptive statistics are cleaner on the filtered set.
 
 ---
 
-## Experiment 1 — Preamble Length as Independent Variable
+## Experiment 0 — Replication Baseline
 
-### Hypothesis
-
-A longer preamble before the document list shifts all documents to higher absolute token positions. If the model tracks absolute token position (RoPE decay hypothesis), the entire U-curve should shift — primacy should weaken because the first document is no longer near token 0. If the model reanchors to relative list position (attention sink / structural hypothesis), the U-curve shape should be stable regardless of preamble length.
+Replicate the Liu et al. (2023) U-shaped curve on our dataset.
 
 ### Design
 
-**Fixed:** 20 documents, 100 questions, gold document swept across positions 1, 5, 10, 15, 20
+**20-document version** (`01_replication_20doc.ipynb`):
+- 196 questions, 20 documents each
+- Gold document swept across positions 1, 5, 10, 15, 20
+- Within-subjects: every question tested at every position
+- 196 × 5 = 980 API calls
 
-**Preamble conditions (4 levels):**
+**30-document version** (`01_replication_30doc.ipynb`):
+- 196 questions, 30 documents each
+- Gold document swept across positions 1, 5, 10, 15, 20, 25, 30
+- 196 × 7 = 1,372 API calls
+- Rationale: more documents increase retrieval difficulty, pushing more questions into the position-sensitive zone
 
-| Condition | Approx tokens | Implementation |
+### Results
+
+**20-document:** Marginal U-shape. Edge (pos 1, 20) = 80.4%, middle (pos 5, 10, 15) = 74.3%, U-effect = +6.0%. Cochran Q significant on position-sensitive subset only (p = 0.049).
+
+**30-document:** Clear U-shape. Edge (pos 1, 30) = 80.9%, middle (pos 10, 15, 20) = 71.4%, U-effect = +9.4%.
+- Cochran Q: Q = 27.28, df = 6, **p = 0.0001**
+- McNemar pos 30 vs 20: **p = 0.0005**
+- McNemar pos 1 vs 20: **p = 0.004**
+- Position-sensitive questions (81/196): edge = 73.5%, middle = 50.6%, U-effect = +22.8%
+
+**Gate: PASSED.** All subsequent experiments use 30-document prompts.
+
+### Key design detail: distractor order
+
+For the 30-doc dataset, each question has exactly 29 distractors. `random.sample(pool, 29)` returns all 29 in a shuffled order — every position gets the same set of distractors, only their arrangement differs. This ensures total prompt length and content are identical across positions for a given question, isolating position as the only variable.
+
+---
+
+## Experiment 1 — Preamble Length
+
+### Hypothesis
+
+A longer preamble before the document list shifts all documents to higher absolute token positions. If the model tracks absolute token position (RoPE decay hypothesis), primacy should weaken. If it reanchors to relative list position (structural hypothesis), the U-curve shape should be stable.
+
+### Full design (ideal)
+
+| Factor | Levels |
+|---|---|
+| Preamble | None (0 words), Short (~130 words), Medium (~550 words), Long (~1290 words) |
+| Position | 1, 5, 10, 15, 20, 25, 30 |
+| Questions | 196 (within-subjects) |
+| **Total calls** | **196 × 7 × 4 = 5,488** |
+
+### Reduced design (executed)
+
+To manage cost and API limitations, we ran a reduced version:
+
+| Factor | Levels | Rationale for reduction |
 |---|---|---|
-| None | 0 | No preamble |
-| Short | ~100 | One paragraph from a Wikipedia article on an unrelated topic (e.g., history of chess) |
-| Medium | ~500 | ~3 paragraphs of the same neutral text |
-| Long | ~1500 | ~10 paragraphs |
+| Preamble | None, Short (~130w), Long (~1290w) | 3 levels still allow dose-response trend detection; medium is interpolatable |
+| Position | 1, 5, 15, 25, 30 | Dropped 10, 20 — the middle trough was flat (70-72%) in Exp 0; position 15 suffices as trough reference |
+| Questions | 196 (within-subjects) | No reduction |
+| **Total calls** | **196 × 5 × 3 = 2,940** |
 
-Use the **same fixed text** for a given condition across all trials. This controls for content effects and makes the preamble cacheable.
+The reduced design preserves:
+- Both edges (1, 30) for primacy/recency measurement
+- Slope positions (5, 25) to detect asymmetric effects
+- One true middle position (15) as trough reference
+- Three preamble levels for trend detection and content-confound control
 
-> ⚠️ **Preamble content must be genuinely neutral.** Don't use text that's topically related to any of your 200 questions. A passage about Byzantine architecture or 19th-century botany is safe. Avoid current events, pop culture, sports, geography — these overlap too easily with trivia questions.
+The full design can be extended later — saved results include question_id, position, and condition, so the checkpoint/resume logic will skip completed trials and only run new ones.
 
-> ⚠️ **Total prompt length increases.** At 1500-token preamble + 20 documents × 175 tokens each = ~5000 tokens per prompt. At GPT-4o-mini this is still ~$0.00075 per call. At 500 calls × 4 conditions = 2000 calls, total cost is still under $2.
+### Preamble source
 
-**Calls:** 5 positions × 20 trials × 4 preamble conditions = 400 calls
+Text from the "History of paper" Wikipedia article — verified to have zero topical overlap with any question domain (film, music, sports, politics, literature, science). The same fixed text is used for all questions at a given preamble level. The three levels are nested slices of the same article (short = first paragraph, long = first ~10 paragraphs), so the only variable across conditions is length, not content.
+
+Stored in `data_misc/preambles.json` with all 4 levels (none, short, medium, long) for future extension.
+
+### Key control: distractor order fixed per question
+
+Distractors are shuffled once per question (seeded by question index), then the gold doc is inserted at each target position into that fixed sequence. This ensures:
+- Across positions: same distractor order, gold doc just moves
+- Across preamble conditions: identical document list, only preamble changes
+- The only two independent variables are position and preamble length
+
+### Results
+
+**Finding: Preamble improves accuracy and eliminates the U-curve (opposite of RoPE decay prediction).**
+
+| Condition | Overall | Edge (1,30) | Middle (15) | U-effect |
+|---|---|---|---|---|
+| No preamble | 77.6% | 82.9% | 73.5% | +9.4% |
+| Short (~130w) | 83.4% | 85.7% | 81.6% | +4.1% |
+| Long (~1290w) | 87.3% | 86.7% | 86.2% | +0.5% |
+
+Statistical tests:
+- Cochran Q (does preamble affect accuracy?): Q = 117.5, df = 2, **p < 0.000001**
+- Cochran Q per condition (does position matter within each?):
+  - No preamble: Q = 27.2, **p = 0.00002** (strong positional effect)
+  - Short: Q = 9.4, p = 0.051 (positional effect disappearing)
+  - Long: Q = 3.4, p = 0.494 (positional effect completely eliminated)
+- Pairwise McNemar with Bonferroni (overall accuracy): none vs long, none vs short, short vs long
+
+The dose-response gradient in the Cochran Q values (p = 0.00002 → 0.05 → 0.49) shows the preamble doesn't just improve accuracy — it specifically eliminates positional bias. The improvement is concentrated in middle positions (+12-17% at positions 5, 15, 25) while edges barely move (+3-4%).
 
 ### What to Plot
-- 4 overlaid U-curves (one per preamble condition) on the same axes
-- Primacy mass (mean accuracy, positions 1–2) and recency mass (positions 19–20) as bar charts per condition
-- If primacy mass drops as preamble grows while recency mass stays flat → absolute position matters, and RoPE decay is the more likely driver
+- 3 overlaid U-curves (one per preamble condition) — shows curve flattening
+- Primacy (position 1) and recency (position 30) bar charts per condition
+- These are implemented in `02_preamble_length.ipynb`
 
 ---
 
@@ -257,10 +220,12 @@ Use the **same fixed text** for a given condition across all trials. This contro
 
 ### Hypothesis
 
-This is the most theoretically clean experiment. It directly dissociates two competing accounts:
+This experiment directly dissociates two competing accounts:
 
 - **Absolute position hypothesis**: what matters is where the token sits in the full context (index from 0). Item at token 2000 is harder than the same item at token 50.
 - **Relative position hypothesis**: what matters is where the document sits within the list (first, middle, last). The model reanchors regardless of upstream preamble.
+
+> **Note:** Experiment 1 results already provide strong evidence against the absolute position (RoPE decay) hypothesis and toward the structural/relative hypothesis. Experiment 2 provides a cleaner, more direct test and adds the critical length-matched control (condition E).
 
 ### Design
 
@@ -270,19 +235,17 @@ Four conditions created by crossing preamble presence × target position in list
 |---|---|---|---|
 | A | None | Beginning (pos 1–2) | Baseline primacy |
 | B | Long (~1500 tok) | Beginning (pos 1–2) | Same relative position, high absolute position |
-| C | None | Middle (pos 9–11) | Baseline middle degradation |
-| D | Long (~1500 tok) | Middle (pos 9–11) | Same relative middle, high absolute position |
+| C | None | Middle (pos 13–17) | Baseline middle degradation |
+| D | Long (~1500 tok) | Middle (pos 13–17) | Same relative middle, high absolute position |
 
 Key comparisons:
-- **A vs B**: both "first in list," but B has 1500 tokens before the list starts. If accuracy drops from A→B, absolute position hurts even the first document.
+- **A vs B**: both "first in list," but B has ~1290 words before the list starts. If accuracy drops from A→B, absolute position hurts even the first document.
 - **C vs D**: both "middle of list," but D is additionally at high absolute token index. If C vs D differ significantly, absolute position is compounding the middle penalty.
 - **A vs C**: the standard primacy vs middle comparison (replicates baseline)
 
-**Calls:** 4 conditions × 100 questions × 1 trial each = 400 calls
-
-> ⚠️ **Critical confound to control for:** Conditions B and D have longer total prompts than A and C. Longer prompts can reduce performance independently of where the gold document sits, just due to the model having more text to process. To partially control for this, add a 5th condition:
+> ⚠️ **Critical confound to control for:** Conditions B and D have longer total prompts than A and C. Add a 5th condition:
 >
-> **E**: Long preamble *appended after the document list* (before the question). This keeps total length matched to B/D but puts the filler in a different position. If B is worse than E, that's strong evidence it's about where the preamble sits relative to the documents, not just total length.
+> **E**: Long preamble *appended after the document list* (before the question). This keeps total length matched to B/D but puts the filler in a different position. This also addresses the Experiment 1 finding — if the preamble's benefit comes from its position *before* the documents (not just total length), E should not show the same improvement as B/D.
 
 ### What to Plot
 - 2×2 bar chart (primacy/middle × no preamble/preamble)
@@ -301,8 +264,9 @@ This is the most novel experiment and the most directly applicable to RAG engine
 ### Design
 
 **Fixed setup:**
-- Gold document always at middle positions (positions 8–12 of 20)
-- 100 questions, 5 middle positions × 20 trials per condition
+- 30 documents per prompt
+- Gold document always at middle positions (positions 12–18 of 30)
+- 196 questions, within-subjects
 - Baseline: no distinctiveness marker
 
 **Three Von Restorff conditions (test each independently):**
@@ -314,7 +278,7 @@ This is the most novel experiment and the most directly applicable to RAG engine
 The gold document is wrapped in a distinctive XML tag:
 
 ```
-Document [9]:
+Document [15]:
 <key_document>
 {gold_doc_text}
 </key_document>
@@ -324,7 +288,7 @@ All other documents use plain `Document [N]: {text}` format.
 
 **Why this is interesting for RAG:** This directly simulates a real-world RAG engineering practice — adding metadata markers to high-relevance chunks. If VR-1 significantly rescues accuracy, it's an immediately actionable finding.
 
-> ⚠️ **Instruction-following confound:** Instruction-tuned models may treat XML-like tags as system-level signals and attend to them regardless of their position. To test this, run a control where you wrap a *distractor* document at position 9 in the same XML tag while the gold document is at position 9 without the tag. If the model now answers incorrectly (following the tag to the distractor), that's instruction-following, not Von Restorff.
+> ⚠️ **Instruction-following confound:** Instruction-tuned models may treat XML-like tags as system-level signals and attend to them regardless of their position. To test this, run a control where you wrap a *distractor* document in the same XML tag while the gold document is at the same position without the tag. If the model now answers incorrectly (following the tag to the distractor), that's instruction-following, not Von Restorff.
 
 ---
 
@@ -336,115 +300,95 @@ The gold document is rewritten or translated into a visually distinct style:
 
 **Option 2b — Different language:** Translate the gold document to French (or another language) while distractors remain in English. The answer string should remain in English within the passage (e.g., names, dates).
 
-**Option 2b implementation:**
-```python
-# Use a cheap translation API call or a local model
-# Ensure the answer string itself is NOT translated (proper nouns, dates stay intact)
-gold_doc_fr = translate_to_french(gold_doc_text)
-```
-
-**Why this is interesting:** Option 2b is the most extreme distinctiveness manipulation — the document is literally in a different language. It also tests whether the model is biased toward English-language content in mixed-language contexts, which is a separate but related RAG-relevant question.
-
-> ⚠️ **Translation quality matters.** If your translation is low quality, the model may fail to extract the answer even if it attends to the document. Use a good translation service or model (deepl API has a free tier for ~500k chars/month). Always manually verify that the answer string survived translation correctly.
+> ⚠️ **Translation quality matters.** If your translation is low quality, the model may fail to extract the answer even if it attends to the document. Always manually verify that the answer string survived translation correctly.
 
 ---
 
 #### Condition VR-3: Anomalous Framing
 
-The gold document is preceded by a short anomalous or seemingly unrelated sentence that makes it stand out structurally:
+The gold document is preceded by a short anomalous or seemingly unrelated sentence:
 
-**Option 3a — Unrelated opener:** Add an unrelated sentence before the gold document text:
+**Option 3a — Unrelated opener:**
 ```
-Document [9]: [Note: The following passage was retrieved from an unusual source.] {gold_doc_text}
-```
-
-**Option 3b — Odd meta-commentary:** Frame the gold document as if someone flagged it:
-```
-Document [9]: [Retrieved with high confidence score: 0.97] {gold_doc_text}
+Document [15]: [Note: The following passage was retrieved from an unusual source.] {gold_doc_text}
 ```
 
-Option 3b is particularly interesting because it simulates a RAG system that passes retrieval scores as metadata into the prompt. If the model attends more to documents flagged with high confidence scores, that's a directly useful RAG finding.
+**Option 3b — Confidence score:**
+```
+Document [15]: [Retrieved with high confidence score: 0.97] {gold_doc_text}
+```
 
-> ⚠️ **Confound with instruction following (again):** "High confidence score" language might work not because of Von Restorff distinctiveness but because it looks like a system instruction. The control here is to put a *low* confidence score on the gold document: `[Retrieved with confidence score: 0.12]`. If the model then ignores the gold document, that confirms it's following the score instruction, not the isolation effect.
+Option 3b is particularly interesting because it simulates a RAG system that passes retrieval scores as metadata into the prompt.
+
+> ⚠️ **Confound with instruction following:** The control is to put a *low* confidence score on the gold document: `[Retrieved with confidence score: 0.12]`. If the model then ignores the gold document, that confirms it's following the score instruction, not the isolation effect.
 
 ---
 
 ### What to Measure Across All VR Conditions
 
-- **Rescue rate**: `(accuracy_VR_condition - accuracy_baseline_middle) / (accuracy_baseline_start - accuracy_baseline_middle)` — expressed as "how much of the primacy advantage did distinctiveness recover?"
-- Accuracy vs. position curve for each condition overlaid on baseline
-- Separately report: cases where distinctiveness *hurt* accuracy (e.g., model answered about the distinctive document even when it didn't contain the answer)
+- **Rescue rate**: `(accuracy_VR_condition - accuracy_baseline_middle) / (accuracy_baseline_edge - accuracy_baseline_middle)` — how much of the primacy advantage did distinctiveness recover?
+- Accuracy at middle positions for each condition overlaid on baseline
+- Separately report: cases where distinctiveness *hurt* accuracy
 
 ---
 
 ## Notebook Structure
 
 ```
-00_setup.ipynb
-    - API client setup (Gemini / OpenAI)
-    - Load TriviaQA, filter, build distractor pool
-    - Closed-book baseline (100 questions, no documents)
-    - Exclude questions answered correctly in closed-book
-    - Save clean_questions.json
+DatasetBuilder/
+    pipeline/             — 6-stage dataset construction pipeline
+    dataset/
+        final_dataset.json      — 196 questions, 19 distractors (20-doc)
+        final_dataset_30.json   — 196 questions, 29 distractors (30-doc)
 
-01_replication.ipynb
-    - Experiment 0: baseline U-curve replication
-    - Gate check before proceeding
+notebooks/
+    01_replication_20doc.ipynb  — Exp 0: 20-doc U-curve (DONE)
+    01_replication_30doc.ipynb  — Exp 0: 30-doc U-curve (DONE)
+    02_preamble_length.ipynb    — Exp 1: preamble × position (DONE)
+    03_relative_vs_absolute.ipynb — Exp 2: 2×2 factorial + control E
+    04_von_restorff.ipynb       — Exp 3: distinctiveness manipulations
+    05_analysis.ipynb           — Cross-experiment synthesis
 
-02_preamble_length.ipynb
-    - Experiment 1: 4 preamble conditions × 5 positions
-
-03_relative_vs_absolute.ipynb
-    - Experiment 2: 2×2 factorial + condition E control
-
-04_von_restorff.ipynb
-    - Experiment 3: VR-1, VR-2a, VR-2b, VR-3a, VR-3b
-    - Including confound control runs
-
-05_analysis.ipynb
-    - Load all saved CSVs
-    - Generate all figures
-    - Cross-experiment synthesis
+results/
+    exp0_wiki_replication.csv         — 20-doc results
+    exp0_30doc_replication.csv        — 30-doc results
+    exp1_preamble_length.csv          — Preamble experiment results
+    [plots: exp0_*.png, exp1_*.png]
 ```
 
 Save raw results to CSV after every experiment — never re-run inference to regenerate analysis.
 
 ---
 
-## Revised Budget (Multi-Document QA)
+## Budget
 
-Document prompts are longer than KV prompts. Estimate per-call:
-- 20 documents × 175 tokens = 3,500 input tokens
-- Preamble (worst case) = 1,500 tokens
-- Question + instructions = ~100 tokens
-- **Total input per call: ~5,100 tokens (with long preamble), ~3,600 without**
-- Output per call: ~20 tokens (short factoid answer)
+All experiments use GPT-4o-mini. Estimated per-call: ~5,000-8,000 input tokens (varies with preamble), ~10-15 output tokens.
 
-| Experiment | Calls | Avg input tokens | Total input | GPT-4o-mini cost |
-|---|---|---|---|---|
-| Closed-book baseline | 100 | 200 | 20K | $0.003 |
-| Exp 0 — Replication | 500 | 3,600 | 1.8M | $0.27 |
-| Exp 1 — Preamble | 400 | 4,500 | 1.8M | $0.27 |
-| Exp 2 — Rel/Abs + E | 500 | 4,500 | 2.25M | $0.34 |
-| Exp 3 — Von Restorff (5 conditions × 100) | 500 | 3,600 | 1.8M | $0.27 |
-| **Total** | **2,000** | | **~7.65M** | **~$1.15** |
-
-**With GPT-4o-mini, the entire experiment costs approximately $1–2.** This leaves substantial room for a second model run (e.g., GPT-4o or Claude Haiku at ~$8–10) well within the $20 budget.
+| Experiment | Calls | Status | Estimated cost |
+|---|---|---|---|
+| Exp 0 — Replication (20-doc) | 980 | Done | ~$0.70 |
+| Exp 0 — Replication (30-doc) | 1,372 | Done | ~$1.00 |
+| Exp 1 — Preamble (reduced) | 2,940 | Done | ~$3.50 |
+| Exp 1 — Preamble (extension to full) | ~2,548 | Optional | ~$3.00 |
+| Exp 2 — Rel/Abs + E | ~2,450 | Planned | ~$3.00 |
+| Exp 3 — Von Restorff | ~2,000 | Planned | ~$2.50 |
+| **Total (completed + planned)** | **~12,290** | | **~$13.70** |
 
 ---
 
 ## What This Can and Cannot Claim
 
 **Can claim:**
-- Whether preamble length modulates U-curve shape or merely shifts it (new empirical result)
-- Whether absolute vs. relative position drives the effect (clean 2×2 test, directly addresses a theoretical gap)
+- Whether preamble length modulates U-curve shape (empirical finding: it eliminates the U-curve)
+- Whether absolute vs. relative position drives the effect (Exp 1 suggests relative; Exp 2 provides direct test)
 - Whether distinctiveness markers rescue middle documents from positional suppression (no prior published test)
 - Which Von Restorff manipulation is most effective and most likely to generalize to real RAG systems
+- That adding neutral preamble text before retrieved documents can improve RAG accuracy (actionable finding)
 
 **Cannot claim:**
-- Mechanism (you're observing behavior, not probing attention weights or activations)
-- Generalization beyond 1–2 models
+- Mechanism (observing behavior, not probing attention weights or activations)
+- Generalization beyond GPT-4o-mini
 - That the Von Restorff effect here is the same cognitive mechanism as in humans
-- Formal statistical significance without power analysis — report confidence intervals and be transparent about N
+- Causal claims about RoPE — we can only say the RoPE decay hypothesis's predictions were not supported
 
-**The honest framing for LinkedIn/GitHub:** "Exploratory empirical study, N=100 questions per condition, single model (GPT-4o-mini), results are directional and warrant further investigation."
+**Honest framing:** "Empirical study, N=196 questions, within-subjects design, single model (GPT-4o-mini), statistically significant results on key measures."
